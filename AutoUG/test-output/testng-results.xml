@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="12" passed="12">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="324661" started-at="2019-04-11T15:06:02Z" finished-at="2019-04-11T15:11:27Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="324661" started-at="2019-04-11T15:06:02Z" finished-at="2019-04-11T15:11:27Z">
+      <class name="AllUgsmoketest.Smoketest4">
+        <test-method status="PASS" signature="setup()[pri:0, instance:AllUgsmoketest.Smoketest4@146ba0ac]" name="setup" is-config="true" duration-ms="7176" started-at="2019-04-11T15:05:55Z" finished-at="2019-04-11T15:06:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="clickonCentralAdminandclickonUsergroup()[pri:1, instance:AllUgsmoketest.Smoketest4@146ba0ac]" name="clickonCentralAdminandclickonUsergroup" duration-ms="43866" started-at="2019-04-11T15:06:02Z" finished-at="2019-04-11T15:06:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickonCentralAdminandclickonUsergroup -->
+        <test-method status="PASS" signature="clickonNewbtnandcreatenewusergrp()[pri:2, instance:AllUgsmoketest.Smoketest4@146ba0ac]" name="clickonNewbtnandcreatenewusergrp" duration-ms="19936" started-at="2019-04-11T15:06:46Z" finished-at="2019-04-11T15:07:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickonNewbtnandcreatenewusergrp -->
+        <test-method status="PASS" signature="CreatingnewuserfromAuthenticationlink()[pri:3, instance:AllUgsmoketest.Smoketest4@146ba0ac]" name="CreatingnewuserfromAuthenticationlink" duration-ms="47820" started-at="2019-04-11T15:07:06Z" finished-at="2019-04-11T15:07:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreatingnewuserfromAuthenticationlink -->
+        <test-method status="PASS" signature="Selectnewcreateduserandsearch()[pri:4, instance:AllUgsmoketest.Smoketest4@146ba0ac]" name="Selectnewcreateduserandsearch" duration-ms="34667" started-at="2019-04-11T15:07:54Z" finished-at="2019-04-11T15:08:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Selectnewcreateduserandsearch -->
+        <test-method status="PASS" signature="ChangeRoleofnewcreatedusergrpandsaveit()[pri:5, instance:AllUgsmoketest.Smoketest4@146ba0ac]" name="ChangeRoleofnewcreatedusergrpandsaveit" duration-ms="19294" started-at="2019-04-11T15:08:29Z" finished-at="2019-04-11T15:08:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChangeRoleofnewcreatedusergrpandsaveit -->
+        <test-method status="PASS" signature="ClickonAccessRightsoption()[pri:6, instance:AllUgsmoketest.Smoketest4@146ba0ac]" name="ClickonAccessRightsoption" duration-ms="4278" started-at="2019-04-11T15:08:48Z" finished-at="2019-04-11T15:08:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickonAccessRightsoption -->
+        <test-method status="PASS" signature="ClickonNewUsergroupandclickonchangealltochangeaccessofrighst()[pri:7, instance:AllUgsmoketest.Smoketest4@146ba0ac]" name="ClickonNewUsergroupandclickonchangealltochangeaccessofrighst" duration-ms="29926" started-at="2019-04-11T15:08:52Z" finished-at="2019-04-11T15:09:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickonNewUsergroupandclickonchangealltochangeaccessofrighst -->
+        <test-method status="PASS" signature="Createnewsites()[pri:8, instance:AllUgsmoketest.Smoketest4@146ba0ac]" name="Createnewsites" duration-ms="37568" started-at="2019-04-11T15:09:22Z" finished-at="2019-04-11T15:10:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Createnewsites -->
+        <test-method status="PASS" signature="Updatenewsites()[pri:9, instance:AllUgsmoketest.Smoketest4@146ba0ac]" name="Updatenewsites" duration-ms="13757" started-at="2019-04-11T15:10:00Z" finished-at="2019-04-11T15:10:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Updatenewsites -->
+        <test-method status="PASS" signature="updatingloc()[pri:10, instance:AllUgsmoketest.Smoketest4@146ba0ac]" name="updatingloc" duration-ms="17221" started-at="2019-04-11T15:10:13Z" finished-at="2019-04-11T15:10:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatingloc -->
+        <test-method status="PASS" signature="CreatingNewLoc()[pri:11, instance:AllUgsmoketest.Smoketest4@146ba0ac]" name="CreatingNewLoc" duration-ms="13251" started-at="2019-04-11T15:10:31Z" finished-at="2019-04-11T15:10:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreatingNewLoc -->
+        <test-method status="PASS" signature="creatingdepartments()[pri:12, instance:AllUgsmoketest.Smoketest4@146ba0ac]" name="creatingdepartments" duration-ms="42958" started-at="2019-04-11T15:10:44Z" finished-at="2019-04-11T15:11:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creatingdepartments -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:AllUgsmoketest.Smoketest4@146ba0ac]" name="teardown" is-config="true" duration-ms="2274" started-at="2019-04-11T15:11:27Z" finished-at="2019-04-11T15:11:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- AllUgsmoketest.Smoketest4 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

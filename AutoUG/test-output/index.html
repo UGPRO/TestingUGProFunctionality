@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-passed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>C:\Users\akhosla\AppData\Local\Temp\testng-eclipse--927267752\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">12 methods,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="AllUgsmoketest.Smoketest4" hash-for-method="ChangeRoleofnewcreatedusergrpandsaveit">ChangeRoleofnewcreatedusergrpandsaveit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="AllUgsmoketest.Smoketest4" hash-for-method="ClickonAccessRightsoption">ClickonAccessRightsoption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="AllUgsmoketest.Smoketest4" hash-for-method="ClickonNewUsergroupandclickonchangealltochangeaccessofrighst">ClickonNewUsergroupandclickonchangealltochangeaccessofrighst</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="AllUgsmoketest.Smoketest4" hash-for-method="Createnewsites">Createnewsites</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="AllUgsmoketest.Smoketest4" hash-for-method="CreatingNewLoc">CreatingNewLoc</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="AllUgsmoketest.Smoketest4" hash-for-method="CreatingnewuserfromAuthenticationlink">CreatingnewuserfromAuthenticationlink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="AllUgsmoketest.Smoketest4" hash-for-method="Selectnewcreateduserandsearch">Selectnewcreateduserandsearch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="AllUgsmoketest.Smoketest4" hash-for-method="Updatenewsites">Updatenewsites</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="AllUgsmoketest.Smoketest4" hash-for-method="clickonCentralAdminandclickonUsergroup">clickonCentralAdminandclickonUsergroup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="AllUgsmoketest.Smoketest4" hash-for-method="clickonNewbtnandcreatenewusergrp">clickonNewbtnandcreatenewusergrp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="AllUgsmoketest.Smoketest4" hash-for-method="creatingdepartments">creatingdepartments</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="AllUgsmoketest.Smoketest4" hash-for-method="updatingloc">updatingloc</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">AllUgsmoketest.Smoketest4</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChangeRoleofnewcreatedusergrpandsaveit">
+                  </a> <!-- ChangeRoleofnewcreatedusergrpandsaveit -->
+                  <span class="method-name">ChangeRoleofnewcreatedusergrpandsaveit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ClickonAccessRightsoption">
+                  </a> <!-- ClickonAccessRightsoption -->
+                  <span class="method-name">ClickonAccessRightsoption</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ClickonNewUsergroupandclickonchangealltochangeaccessofrighst">
+                  </a> <!-- ClickonNewUsergroupandclickonchangealltochangeaccessofrighst -->
+                  <span class="method-name">ClickonNewUsergroupandclickonchangealltochangeaccessofrighst</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Createnewsites">
+                  </a> <!-- Createnewsites -->
+                  <span class="method-name">Createnewsites</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreatingNewLoc">
+                  </a> <!-- CreatingNewLoc -->
+                  <span class="method-name">CreatingNewLoc</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreatingnewuserfromAuthenticationlink">
+                  </a> <!-- CreatingnewuserfromAuthenticationlink -->
+                  <span class="method-name">CreatingnewuserfromAuthenticationlink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Selectnewcreateduserandsearch">
+                  </a> <!-- Selectnewcreateduserandsearch -->
+                  <span class="method-name">Selectnewcreateduserandsearch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Updatenewsites">
+                  </a> <!-- Updatenewsites -->
+                  <span class="method-name">Updatenewsites</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickonCentralAdminandclickonUsergroup">
+                  </a> <!-- clickonCentralAdminandclickonUsergroup -->
+                  <span class="method-name">clickonCentralAdminandclickonUsergroup</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickonNewbtnandcreatenewusergrp">
+                  </a> <!-- clickonNewbtnandcreatenewusergrp -->
+                  <span class="method-name">clickonNewbtnandcreatenewusergrp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="creatingdepartments">
+                  </a> <!-- creatingdepartments -->
+                  <span class="method-name">creatingdepartments</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updatingloc">
+                  </a> <!-- updatingloc -->
+                  <span class="method-name">updatingloc</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\akhosla\AppData\Local\Temp\testng-eclipse--927267752\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;AllUgsmoketest.Smoketest4&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(12);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'CreatingnewuserfromAuthenticationlink')
+data.setCell(0, 2, 'AllUgsmoketest.Smoketest4')
+data.setCell(0, 3, 47820);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'clickonCentralAdminandclickonUsergroup')
+data.setCell(1, 2, 'AllUgsmoketest.Smoketest4')
+data.setCell(1, 3, 43866);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'creatingdepartments')
+data.setCell(2, 2, 'AllUgsmoketest.Smoketest4')
+data.setCell(2, 3, 42958);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Createnewsites')
+data.setCell(3, 2, 'AllUgsmoketest.Smoketest4')
+data.setCell(3, 3, 37568);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Selectnewcreateduserandsearch')
+data.setCell(4, 2, 'AllUgsmoketest.Smoketest4')
+data.setCell(4, 3, 34667);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'ClickonNewUsergroupandclickonchangealltochangeaccessofrighst')
+data.setCell(5, 2, 'AllUgsmoketest.Smoketest4')
+data.setCell(5, 3, 29926);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'clickonNewbtnandcreatenewusergrp')
+data.setCell(6, 2, 'AllUgsmoketest.Smoketest4')
+data.setCell(6, 3, 19936);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'ChangeRoleofnewcreatedusergrpandsaveit')
+data.setCell(7, 2, 'AllUgsmoketest.Smoketest4')
+data.setCell(7, 3, 19294);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'updatingloc')
+data.setCell(8, 2, 'AllUgsmoketest.Smoketest4')
+data.setCell(8, 3, 17221);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'Updatenewsites')
+data.setCell(9, 2, 'AllUgsmoketest.Smoketest4')
+data.setCell(9, 3, 13757);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'CreatingNewLoc')
+data.setCell(10, 2, 'AllUgsmoketest.Smoketest4')
+data.setCell(10, 3, 13251);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'ClickonAccessRightsoption')
+data.setCell(11, 2, 'AllUgsmoketest.Smoketest4')
+data.setCell(11, 3, 4278);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">AllUgsmoketest.Smoketest4</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <span class="method-name">clickonCentralAdminandclickonUsergroup</span>
+                <span class="method-start">7243 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickonNewbtnandcreatenewusergrp</span>
+                <span class="method-start">51120 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CreatingnewuserfromAuthenticationlink</span>
+                <span class="method-start">71058 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Selectnewcreateduserandsearch</span>
+                <span class="method-start">118886 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ChangeRoleofnewcreatedusergrpandsaveit</span>
+                <span class="method-start">153557 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ClickonAccessRightsoption</span>
+                <span class="method-start">172854 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ClickonNewUsergroupandclickonchangealltochangeaccessofrighst</span>
+                <span class="method-start">177134 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Createnewsites</span>
+                <span class="method-start">207070 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Updatenewsites</span>
+                <span class="method-start">244640 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updatingloc</span>
+                <span class="method-start">258400 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CreatingNewLoc</span>
+                <span class="method-start">275624 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">creatingdepartments</span>
+                <span class="method-start">288877 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">331888 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
