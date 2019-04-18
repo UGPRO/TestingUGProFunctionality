@@ -52,14 +52,16 @@ public class Smoketest3  {
 	static String CreateNewApt;	     
 	static String CreateNewAptAbrev;
 	static String selprgupd;
+	public static String serverurl;
 	static String selapntmntupd;
+	static String str="Test executed on:";
 	@BeforeSuite
 	public static void setup() throws InterruptedException 
 	{
 		// TODO Auto-generated method stub
 		//Code for test 1 and test 2 smoke test case.
 		reader =new Xls_Reader("E:\\Test.xlsx");
-
+		serverurl=reader.getCellData("ST1", "UGURL", 2);
 		//	userlogin.login(driver);
 		//	String Username	=reader.getCellData("ST1", "Username", 2);
 		//String Password	=reader.getCellData("ST1", "Password", 2);
@@ -91,6 +93,7 @@ public class Smoketest3  {
 		try
 		{
 			test2 = extent2.createTest("SmokeTest3", "This test is to Validate Create and Update new Program and Appointmenttype");
+			test2.log(Status.INFO, str +" " +serverurl);
 			test2.log(Status.INFO, "This step will click on Definition table option and will click on Program Option");
 			userlogin.login(driver);
 

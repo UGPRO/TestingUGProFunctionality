@@ -3,17 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="AllUgsmoketest.Smoketest4">
+      <class name="AllUgsmoketest.Smoketest6">
         <methods>
-          <include name="Updatenewsites"/>
           <include name="teardown"/>
-          <include name="CreatingNewLoc"/>
-          <include name="creatingdepartments"/>
-          <include name="Createnewsites"/>
+          <include name="ActivatingappoinmenttypecreatedatCentrallevel"/>
           <include name="setup"/>
-          <include name="updatingloc"/>
         </methods>
-      </class> <!-- AllUgsmoketest.Smoketest4 -->
+      </class> <!-- AllUgsmoketest.Smoketest6 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

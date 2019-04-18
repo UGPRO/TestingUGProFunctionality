@@ -10,6 +10,7 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -25,7 +26,8 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 import excelreaderutility.Xls_Reader;
 
-public class Smoketest5 extends Smoketest4 {
+public class Smoketest5 
+{
 	static WebDriver driver;
 	public static  Xls_Reader reader ;
 	static String generalval	 ;
@@ -36,18 +38,24 @@ public class Smoketest5 extends Smoketest4 {
 	static String PrivilegedUsersSelectDept;
 	static String AccessRightsSelectDept;
 	static String ProgramsSelectDeptt;
+	static String CreateDepname;
+	static String SetuserAuth;
+	static String UsergroupAb;
+	static String UsergroupN;
 
 	static ExtentHtmlReporter htmlReporter4;
 	static ExtentReports extent4;
 	static ExtentTest test4;
-
+	public static String serverurl;
+	static String str="Test executed on:";
 	@BeforeSuite
 	public static void setup() 
 	{
 		// TODO Auto-generated method stub
 		//Code for test 1 and test 2 smoke test case.
-
 		reader =new Xls_Reader("E:\\Test.xlsx");
+		serverurl=reader.getCellData("ST1", "UGURL", 2);
+	
 
 		// this below two line of code is just for FYI we need to update it.
 
@@ -64,9 +72,9 @@ public class Smoketest5 extends Smoketest4 {
 		CreateNewPrgName	 =reader.getCellData("ST3", "Create New Program Name", 2);
 
 
-		htmlReporter4 = new ExtentHtmlReporter("Smoketest4report.html");
+		htmlReporter4 = new ExtentHtmlReporter("Smoketest5report.html");
 		extent4 = new ExtentReports();
-		extent4.attachReporter(htmlReporter3);
+		extent4.attachReporter(htmlReporter4);
 
 
 		System.setProperty("webdriver.chrome.driver", "C:\\sdriver\\chromedriver.exe");
@@ -78,6 +86,7 @@ public class Smoketest5 extends Smoketest4 {
 		try
 		{
 			test4 = extent4.createTest("SmokeTest5", "This test is to Validate Departmental settings");
+			test4.log(Status.INFO, str +" " +serverurl);
 			test4.log(Status.INFO, "This step will click on Departmental Setup - General Option");
 
 			userlogin.login(driver);
@@ -95,6 +104,8 @@ public class Smoketest5 extends Smoketest4 {
 
 
 			driver.findElement(By.xpath("//div[@id='menuItem_11']")).click(); //clicking on Departmentalsetup-General Option
+			test4.pass("User is able to Click on Departmental Steup-General Option");
+			Thread.sleep(2000);
 
 		}
 		catch(Exception e)
@@ -111,14 +122,14 @@ public class Smoketest5 extends Smoketest4 {
 	{
 		try
 		{
-			test4.log(Status.INFO, "This step will click on Departmental Setup - General Option");
+			test4.log(Status.INFO, "This step will save all details in General setting");
 			Thread.sleep(3000);
 			framecheck.checkframe11(driver);
 			Select profile=new Select(driver.findElement(By.xpath("//select[@class='uk-width-1-1']")));
 			driver.findElement(By.xpath("//select[@class='uk-width-1-1']")).click(); 
-			Thread.sleep(500);
+			Thread.sleep(2000);
 			profile.selectByVisibleText(CreateDepname);
-
+			Thread.sleep(2000);
 			/*	for(int i=1; i<=2; i++)
 			{
 				Thread.sleep(2000);
@@ -128,7 +139,8 @@ public class Smoketest5 extends Smoketest4 {
 			Thread.sleep(2000);
 			driver.findElement(By.xpath("//textarea[@class='uk-width-1-1']")).sendKeys(generalval);
 			Thread.sleep(3000);
-			driver.findElement(By.xpath("//button[@type='submit']")).click();
+			//driver.findElement(By.xpath("//button[@type='submit']")).click();
+
 
 			boolean x=driver.findElement(By.xpath("//div[@class='uk-width-1-6']//input[@type='checkbox']")).isSelected();
 
@@ -176,9 +188,32 @@ public class Smoketest5 extends Smoketest4 {
 			Thread.sleep(3000);
 			driver.findElement(By.xpath("//a[@label='Session info updates']")).click();
 			Thread.sleep(3000);
+			
+			driver.findElement(By.xpath("//span//input[@class='uk-form-small uk-form-width-mini uk-margin-right']")).click();
+			Thread.sleep(2000);
+			driver.findElement(By.xpath("//span//input[@class='uk-form-small uk-form-width-mini uk-margin-right']")).clear();
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//span//input[@class='uk-form-small uk-form-width-mini uk-margin-right']")).sendKeys("1");
 			Thread.sleep(3000);
 			driver.findElement(By.xpath("//button[@type='submit']")).click(); //saving
-			test4.pass("User is able to save all Generel details");
+			test4.pass("User is able to save all General settings details");
+			
+			driver.switchTo().alert();
+			Thread.sleep(6000);
+
+			throw new Exception();
+
+		}
+		
+		
+		catch (NoAlertPresentException exception)
+		{
+
+			test4.pass("User is  able to Create a new usergroup");
+
+
+
+
 		}
 		catch(Exception e)
 		{
@@ -274,7 +309,7 @@ public class Smoketest5 extends Smoketest4 {
 			driver.findElement(By.xpath("//select[@class='select']")).click(); 
 			Thread.sleep(500);
 			profile1.selectByVisibleText(CreateDepname);
-			driver.findElement(By.xpath("//td[text()='"+UsergroupN+"']")).click();
+			
 			Thread.sleep(3000);
 			test4.pass("User is able to Click on Access rights option");
 		}
@@ -293,6 +328,8 @@ public class Smoketest5 extends Smoketest4 {
 		{
 
 			test4.log(Status.INFO, "This step will Click on the Change all to change the rights access");
+			driver.findElement(By.xpath("//td[text()='"+UsergroupN+"']")).click();  // selecting new created usergroup
+			Thread.sleep(3000);
 
 
 			driver.findElement(By.xpath("//span[@id='setAll']")).click();  ///click on change all option.
@@ -304,7 +341,9 @@ public class Smoketest5 extends Smoketest4 {
 			//need to handle i frame
 			driver.switchTo().frame(driver.findElement(By.id("ultramodal1-modal-iframe")));
 			Thread.sleep(3000);
-			driver.findElement(By.xpath("//body[@class='window-small']//form//table//tbody//tr[2]//td//div[2]//input[2]")).click(); 
+			driver.findElement(By.xpath("//body[@class='window-small']//form//table//tbody//tr[2]//td//div[2]//input[2]")).click(); //click on the all members have access for priviliged user
+			Thread.sleep(3000);
+			driver.findElement(By.xpath("//body[@class='window-small']//form//table//tbody//tr[3]//td//div[2]//input[2]")).click();//click on the all members have access for non priviliged user
 			Thread.sleep(3000);
 			driver.findElement(By.xpath("//button[@id='butNext']")).click();//on click of confirm button ,control is getting out from the main div
 			Thread.sleep(5000);
@@ -397,6 +436,7 @@ public class Smoketest5 extends Smoketest4 {
 	@AfterSuite
 	public static void teardown()
 	{
+		extent4.flush();
 		driver.quit();							
 
 	}

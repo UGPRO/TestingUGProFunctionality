@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Default suite">
+  <test thread-count="2" verbose="2" name="Smoketest1">
+    <classes>
+      <class name="AllUgsmoketest.Smoketest1"/>
+    </classes>
+  </test> <!-- Smoketest1 -->
+  
+  <test thread-count="2" verbose="2" name="Smoketest2">
+    <classes>
+      <class name="AllUgsmoketest.Smoketest2"/>
+    </classes>
+  </test> <!-- Smoketest2 -->
+</suite> <!-- Default suite -->
+            

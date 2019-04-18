@@ -35,7 +35,7 @@ public class schedulecreation extends Smoketest6 {
 		Thread.sleep(2000);
 		 framecheck.checkframe12(driver);
 		 driver.findElement(By.xpath("//div[@id='menuItem_2']")).click(); //schedules
-		
+		 Thread.sleep(8000);
 		 framecheck.checkframe11(driver);
 		 
 		 
@@ -80,9 +80,9 @@ public class schedulecreation extends Smoketest6 {
 		// actions3.sendKeys(Keys.DOWN).build().perform();
 	//	driver.findElement(By.xpath("//td[text()='" + UpdSite+" "+"-"+" "+ CreateNewLoc+ "']")).click();
 		//input[@value='Save']
-		 Thread.sleep(3000);
+		 Thread.sleep(4000);
 		 driver.findElement(By.xpath("//input[@value='Save']")).click();
-		 Thread.sleep(3000);
+		 Thread.sleep(20000);
 		 driver.switchTo().defaultContent();
 			
 			 driver.switchTo().frame(driver.findElement(By.id("ultramodal1-modal-iframe")));

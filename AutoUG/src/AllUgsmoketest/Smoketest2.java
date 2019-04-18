@@ -62,8 +62,8 @@ public class Smoketest2
 	static String SelReportAftrFxn;
 
 	static String selexistingrep;
-
-
+	public static String serverurl;
+	static String str="Test executed on:";
 
 
 	static WebDriver driver; 
@@ -73,7 +73,7 @@ public class Smoketest2
 		// TODO Auto-generated method stub
 		//Code for test 1 and test 2 smoke test case.
 		reader = new Xls_Reader("E:\\Test.xlsx");
-
+		serverurl=reader.getCellData("ST1", "UGURL", 2);
 		Refreshval = SubChar(reader.getCellData("ST2", "ScreenRefresh value", 2).toString());
 		Futurebook	=SubChar(reader.getCellData("ST2", "Futurebookday", 2));
 		Calendarday	=reader.getCellData("ST2", "CalendarFirstDayOfWeek", 2);
@@ -113,8 +113,9 @@ public class Smoketest2
 	{
 		try
 		{
-
+			
 			test1 = extent1.createTest("SmokeTest2", "This test is to Validate all the System Administration Options");
+			test1.log(Status.INFO, str +" " +serverurl);
 			test1.log(Status.INFO, "This step is clicking on the System setting option");
 			userlogin.login(driver);
 

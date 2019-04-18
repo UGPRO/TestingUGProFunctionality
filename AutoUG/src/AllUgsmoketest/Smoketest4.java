@@ -37,7 +37,7 @@ import excelreaderutility.Xls_Reader;
 public class Smoketest4 
 {
 
-	static WebDriver driver;
+public	static WebDriver driver;
 	//static SimpleDateFormat formatter = new SimpleDateFormat("HHmmssddMMyyyy");  
 	//	static Date date = new Date();  
 
@@ -72,6 +72,7 @@ public class Smoketest4
 	static ExtentHtmlReporter htmlReporter3;
 	static ExtentReports extent3;
 	static ExtentTest test3;
+	public static String serverurl;
 
 
 	//public static void main(String[] args) throws InterruptedException, IOException {
@@ -84,14 +85,15 @@ public class Smoketest4
 
 	//String Username	=reader.getCellData("ST1", "Username", 2);
 	// String Password=reader.getCellData("ST1", "Password", 2);
-
+	static String str="Test executed on:";
 
 	@BeforeSuite
-	public static void setup()
+	public static void setup() throws InterruptedException
 	{
-
-
 		reader = new Xls_Reader("E:\\Test.xlsx");
+		Thread.sleep(2000);
+		serverurl=reader.getCellData("ST1", "UGURL", 2);
+		
 		UsergroupN	=reader.getCellData("ST4", "UsergroupName", 2);
 		UsergroupAb	=reader.getCellData("ST4", "UsergroupAbrev", 2);
 		SelectUserProfile	=reader.getCellData("ST4", "SelectUsergroupProfile", 2);
@@ -128,7 +130,9 @@ public class Smoketest4
 	{
 		try
 		{
+			
 			test3 = extent3.createTest("SmokeTest4", "This test is to Validate Central Administration options");
+			test3.log(Status.INFO, str +" " +serverurl);
 			test3.log(Status.INFO, "This step will click on Central Administration option and will click on Usergroup Option");
 
 			userlogin.login(driver);
@@ -202,7 +206,7 @@ public class Smoketest4
 		catch (NoAlertPresentException exception)
 		{
 
-			test3.pass("User is  able to Create a new usergorup");
+			test3.pass("User is  able to Create a new usergroup");
 
 
 
