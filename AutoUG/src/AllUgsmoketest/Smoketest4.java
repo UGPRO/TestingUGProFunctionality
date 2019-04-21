@@ -90,7 +90,7 @@ public	static WebDriver driver;
 	@BeforeSuite
 	public static void setup() throws InterruptedException
 	{
-		reader = new Xls_Reader("E:\\Test.xlsx");
+		reader = new Xls_Reader("C:\\Test.xlsx");
 		Thread.sleep(2000);
 		serverurl=reader.getCellData("ST1", "UGURL", 2);
 		

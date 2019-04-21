@@ -28,7 +28,7 @@ public class regtest1 {
 
 	public static void main(String[] args) throws InterruptedException {
 
-		reader = new Xls_Reader("E:\\Test.xlsx");
+		reader = new Xls_Reader("C:\\Test.xlsx");
 
 
 		Refreshval = SubChar(reader.getCellData("ST2", "ScreenRefresh value", 2).toString());

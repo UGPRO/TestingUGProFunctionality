@@ -57,7 +57,9 @@ public class Smoketest1
 	@BeforeSuite
 	public static void setup() throws InterruptedException
 	{
-		reader = new Xls_Reader("E:\\Test.xlsx");
+		
+		//test git push
+		reader = new Xls_Reader("C:\\Test.xlsx");
 		Thread.sleep(2000);
 		serverurl=reader.getCellData("ST1", "UGURL", 2);
 		htmlReporter = new ExtentHtmlReporter("Smoketest1report.html");
@@ -190,7 +192,7 @@ public class Smoketest1
 			Thread.sleep(3000);
 			//div[@class='tabbar1']//span[@title='F5 | Individual']
 			
-			driver.findElement(By.xpath("//div[@class='tabbar2']//span[@title='F5 | Individual']")).click();
+		//	driver.findElement(By.xpath("//div[@class='tabbar2']//span[@title='F5 | Individual']")).click();
 			Thread.sleep(3000);
 			driver.findElement(By.xpath("//div[@class='but right']/img")).click();
 			Thread.sleep(3000);

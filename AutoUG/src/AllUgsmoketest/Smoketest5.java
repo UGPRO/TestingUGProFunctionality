@@ -53,7 +53,7 @@ public class Smoketest5
 	{
 		// TODO Auto-generated method stub
 		//Code for test 1 and test 2 smoke test case.
-		reader =new Xls_Reader("E:\\Test.xlsx");
+		reader =new Xls_Reader("C:\\Test.xlsx");
 		serverurl=reader.getCellData("ST1", "UGURL", 2);
 	
 

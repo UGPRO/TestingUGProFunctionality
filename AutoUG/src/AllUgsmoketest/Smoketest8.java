@@ -66,7 +66,7 @@ public class Smoketest8  {
 	public static void setup() throws InterruptedException
 	{
 
-		reader =new Xls_Reader("E:\\Test.xlsx");
+		reader =new Xls_Reader("C:\\Test.xlsx");
 		serverurl=reader.getCellData("ST1", "UGURL", 2);
 		Patintfamname = reader.getCellData("ST8", "Patient Fam Name", 2);
 		Patintgivname = reader.getCellData("ST8", "Patinet Given Name", 2);

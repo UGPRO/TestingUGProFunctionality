@@ -21,7 +21,7 @@ public class regtest4 extends regtest2
 
 	public static void main(String[] args) throws InterruptedException {
 
-		reader = new Xls_Reader("E:\\Test.xlsx");
+		reader = new Xls_Reader("C:\\Test.xlsx");
 		Itempatfield = reader.getCellData("reg4", "Patientfield-Item", 2);
 
 

@@ -1,9 +1,5 @@
 package AllUgsmoketest;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -60,7 +56,7 @@ public class Smoketest3  {
 	{
 		// TODO Auto-generated method stub
 		//Code for test 1 and test 2 smoke test case.
-		reader =new Xls_Reader("E:\\Test.xlsx");
+		reader =new Xls_Reader("C:\\Test.xlsx");
 		serverurl=reader.getCellData("ST1", "UGURL", 2);
 		//	userlogin.login(driver);
 		//	String Username	=reader.getCellData("ST1", "Username", 2);

@@ -55,7 +55,7 @@ public class Smoketest7
 	{
 		// TODO Auto-generated method stub
 		//Code for test 1 and test 2 smoke test case.s
-		reader =new Xls_Reader("E:\\Test.xlsx");
+		reader =new Xls_Reader("C:\\Test.xlsx");
 		serverurl=reader.getCellData("ST1", "UGURL", 2);
 		SelectSchedule	=reader.getCellData("ST7", "Schedule Setup-Select Schedule", 2);
 		GeneralInfoVal	=reader.getCellData("ST7", "General-Info field Value", 2);

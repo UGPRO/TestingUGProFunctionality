@@ -1,33 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="12" passed="11">
+<testng-results skipped="0" failed="5" ignored="0" total="15" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="237058" started-at="2019-04-18T06:33:12Z" finished-at="2019-04-18T06:37:09Z">
+  <suite name="Default suite" duration-ms="382337" started-at="2019-04-21T17:36:07Z" finished-at="2019-04-21T17:42:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="237058" started-at="2019-04-18T06:33:12Z" finished-at="2019-04-18T06:37:09Z">
-      <class name="AllUgsmoketest.Smoketest6">
-        <test-method status="PASS" signature="setup()[pri:0, instance:AllUgsmoketest.Smoketest6@146ba0ac]" name="setup" is-config="true" duration-ms="10712" started-at="2019-04-18T06:33:01Z" finished-at="2019-04-18T06:33:12Z">
+    <test name="Smoketest1" duration-ms="144690" started-at="2019-04-21T17:36:07Z" finished-at="2019-04-21T17:38:31Z">
+      <class name="AllUgsmoketest.Smoketest1">
+        <test-method status="PASS" signature="testloginuser()[pri:1, instance:AllUgsmoketest.Smoketest1@6a41eaa2]" name="testloginuser" duration-ms="48131" started-at="2019-04-21T17:36:07Z" finished-at="2019-04-21T17:36:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="ClickonDepartmentalsettingsandAppointmenttypeoption()[pri:1, instance:AllUgsmoketest.Smoketest6@146ba0ac]" name="ClickonDepartmentalsettingsandAppointmenttypeoption" duration-ms="51104" started-at="2019-04-18T06:33:12Z" finished-at="2019-04-18T06:34:03Z">
+        </test-method> <!-- testloginuser -->
+        <test-method status="PASS" signature="ClickonCentralSetupandlogoutfunc()[pri:2, instance:AllUgsmoketest.Smoketest1@6a41eaa2]" name="ClickonCentralSetupandlogoutfunc" duration-ms="13595" started-at="2019-04-21T17:36:55Z" finished-at="2019-04-21T17:37:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ClickonDepartmentalsettingsandAppointmenttypeoption -->
-        <test-method status="PASS" signature="SelecttheDepttandcheckappointmenttypelinkwithselecteddeptt()[pri:2, instance:AllUgsmoketest.Smoketest6@146ba0ac]" name="SelecttheDepttandcheckappointmenttypelinkwithselecteddeptt" duration-ms="4505" started-at="2019-04-18T06:34:03Z" finished-at="2019-04-18T06:34:07Z">
+        </test-method> <!-- ClickonCentralSetupandlogoutfunc -->
+        <test-method status="PASS" signature="ClickonDepartmentalsetupandlogout()[pri:3, instance:AllUgsmoketest.Smoketest1@6a41eaa2]" name="ClickonDepartmentalsetupandlogout" duration-ms="29450" started-at="2019-04-21T17:37:08Z" finished-at="2019-04-21T17:37:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SelecttheDepttandcheckappointmenttypelinkwithselecteddeptt -->
-        <test-method status="PASS" signature="CreateNewAppointmenttypeandSaveit()[pri:3, instance:AllUgsmoketest.Smoketest6@146ba0ac]" name="CreateNewAppointmenttypeandSaveit" duration-ms="13325" started-at="2019-04-18T06:34:07Z" finished-at="2019-04-18T06:34:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CreateNewAppointmenttypeandSaveit -->
-        <test-method status="PASS" signature="Deletenewcreatedappoinmenttype()[pri:4, instance:AllUgsmoketest.Smoketest6@146ba0ac]" name="Deletenewcreatedappoinmenttype" duration-ms="6711" started-at="2019-04-18T06:34:21Z" finished-at="2019-04-18T06:34:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Deletenewcreatedappoinmenttype -->
-        <test-method status="FAIL" signature="ActivatingappoinmenttypecreatedatCentrallevel()[pri:5, instance:AllUgsmoketest.Smoketest6@146ba0ac]" name="ActivatingappoinmenttypecreatedatCentrallevel" duration-ms="48" started-at="2019-04-18T06:34:27Z" finished-at="2019-04-18T06:34:28Z">
+        </test-method> <!-- ClickonDepartmentalsetupandlogout -->
+        <test-method status="FAIL" signature="Clickonschedule()[pri:4, instance:AllUgsmoketest.Smoketest1@6a41eaa2]" name="Clickonschedule" duration-ms="53451" started-at="2019-04-21T17:37:38Z" finished-at="2019-04-21T17:38:31Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[null]]>
@@ -36,7 +28,7 @@
               <![CDATA[java.lang.AssertionError: null
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.fail(Assert.java:103)
-at AllUgsmoketest.Smoketest6.ActivatingappoinmenttypecreatedatCentrallevel(Smoketest6.java:282)
+at AllUgsmoketest.Smoketest1.Clickonschedule(Smoketest1.java:218)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -67,40 +59,222 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ActivatingappoinmenttypecreatedatCentrallevel -->
-        <test-method status="PASS" signature="clickontheAppointmenttypeperprogramoption()[pri:6, instance:AllUgsmoketest.Smoketest6@146ba0ac]" name="clickontheAppointmenttypeperprogramoption" duration-ms="3273" started-at="2019-04-18T06:34:28Z" finished-at="2019-04-18T06:34:31Z">
+        </test-method> <!-- Clickonschedule -->
+      </class> <!-- AllUgsmoketest.Smoketest1 -->
+    </test> <!-- Smoketest1 -->
+    <test name="Smoketest2" duration-ms="237576" started-at="2019-04-21T17:38:31Z" finished-at="2019-04-21T17:42:29Z">
+      <class name="AllUgsmoketest.Smoketest1">
+        <test-method status="PASS" signature="setup()[pri:0, instance:AllUgsmoketest.Smoketest1@6a41eaa2]" name="setup" is-config="true" duration-ms="11049" started-at="2019-04-21T17:35:52Z" finished-at="2019-04-21T17:36:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickontheAppointmenttypeperprogramoption -->
-        <test-method status="PASS" signature="SelectDepartmenttoseelinkedProgramwithselecteddepartmnet()[pri:7, instance:AllUgsmoketest.Smoketest6@146ba0ac]" name="SelectDepartmenttoseelinkedProgramwithselecteddepartmnet" duration-ms="3445" started-at="2019-04-18T06:34:31Z" finished-at="2019-04-18T06:34:34Z">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:AllUgsmoketest.Smoketest2@2f686d1f]" name="setup" is-config="true" duration-ms="3484" started-at="2019-04-21T17:36:03Z" finished-at="2019-04-21T17:36:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SelectDepartmenttoseelinkedProgramwithselecteddepartmnet -->
-        <test-method status="PASS" signature="Activateappointmenttypeforselectedprogram()[pri:8, instance:AllUgsmoketest.Smoketest6@146ba0ac]" name="Activateappointmenttypeforselectedprogram" duration-ms="9559" started-at="2019-04-18T06:34:34Z" finished-at="2019-04-18T06:34:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Activateappointmenttypeforselectedprogram -->
-        <test-method status="PASS" signature="creatingschedule()[pri:9, instance:AllUgsmoketest.Smoketest6@146ba0ac]" name="creatingschedule" duration-ms="97912" started-at="2019-04-18T06:34:44Z" finished-at="2019-04-18T06:36:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- creatingschedule -->
-        <test-method status="PASS" signature="clickonOrdersetoption()[pri:10, instance:AllUgsmoketest.Smoketest6@146ba0ac]" name="clickonOrdersetoption" duration-ms="3559" started-at="2019-04-18T06:36:22Z" finished-at="2019-04-18T06:36:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickonOrdersetoption -->
-        <test-method status="PASS" signature="selectdepartmenttoseeordesetlinkedwithselecteddepartment()[pri:11, instance:AllUgsmoketest.Smoketest6@146ba0ac]" name="selectdepartmenttoseeordesetlinkedwithselecteddepartment" duration-ms="4853" started-at="2019-04-18T06:36:25Z" finished-at="2019-04-18T06:36:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectdepartmenttoseeordesetlinkedwithselecteddepartment -->
-        <test-method status="PASS" signature="CreateOrderset()[pri:12, instance:AllUgsmoketest.Smoketest6@146ba0ac]" name="CreateOrderset" duration-ms="38683" started-at="2019-04-18T06:36:30Z" finished-at="2019-04-18T06:37:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CreateOrderset -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:AllUgsmoketest.Smoketest6@146ba0ac]" name="teardown" is-config="true" duration-ms="2484" started-at="2019-04-18T06:37:09Z" finished-at="2019-04-18T06:37:11Z">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:AllUgsmoketest.Smoketest1@6a41eaa2]" name="teardown" is-config="true" duration-ms="4819" started-at="2019-04-21T17:42:29Z" finished-at="2019-04-21T17:42:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- AllUgsmoketest.Smoketest6 -->
-    </test> <!-- Default test -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:AllUgsmoketest.Smoketest2@2f686d1f]" name="teardown" is-config="true" duration-ms="831" started-at="2019-04-21T17:42:34Z" finished-at="2019-04-21T17:42:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- AllUgsmoketest.Smoketest1 -->
+      <class name="AllUgsmoketest.Smoketest2">
+        <test-method status="PASS" signature="ClickonSyssettingoptions()[pri:1, instance:AllUgsmoketest.Smoketest2@2f686d1f]" name="ClickonSyssettingoptions" duration-ms="31053" started-at="2019-04-21T17:38:31Z" finished-at="2019-04-21T17:39:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickonSyssettingoptions -->
+        <test-method status="PASS" signature="EditaSyssettingvalues()[pri:2, instance:AllUgsmoketest.Smoketest2@2f686d1f]" name="EditaSyssettingvalues" duration-ms="114502" started-at="2019-04-21T17:39:02Z" finished-at="2019-04-21T17:40:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditaSyssettingvalues -->
+        <test-method status="PASS" signature="ClickandEditPatientFields()[pri:3, instance:AllUgsmoketest.Smoketest2@2f686d1f]" name="ClickandEditPatientFields" duration-ms="17186" started-at="2019-04-21T17:40:57Z" finished-at="2019-04-21T17:41:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickandEditPatientFields -->
+        <test-method status="PASS" signature="ClickonPatientLinkandEditValues()[pri:4, instance:AllUgsmoketest.Smoketest2@2f686d1f]" name="ClickonPatientLinkandEditValues" duration-ms="9775" started-at="2019-04-21T17:41:14Z" finished-at="2019-04-21T17:41:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickonPatientLinkandEditValues -->
+        <test-method status="PASS" signature="ClickonPatientMedicalAlertsandEditValues()[pri:5, instance:AllUgsmoketest.Smoketest2@2f686d1f]" name="ClickonPatientMedicalAlertsandEditValues" duration-ms="6433" started-at="2019-04-21T17:41:24Z" finished-at="2019-04-21T17:41:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickonPatientMedicalAlertsandEditValues -->
+        <test-method status="PASS" signature="ClickonPatientAdminalertsandEditvalues()[pri:6, instance:AllUgsmoketest.Smoketest2@2f686d1f]" name="ClickonPatientAdminalertsandEditvalues" duration-ms="6442" started-at="2019-04-21T17:41:30Z" finished-at="2019-04-21T17:41:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickonPatientAdminalertsandEditvalues -->
+        <test-method status="PASS" signature="ClickonAppointmentlink1andEditvalues()[pri:7, instance:AllUgsmoketest.Smoketest2@2f686d1f]" name="ClickonAppointmentlink1andEditvalues" duration-ms="17413" started-at="2019-04-21T17:41:37Z" finished-at="2019-04-21T17:41:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickonAppointmentlink1andEditvalues -->
+        <test-method status="FAIL" signature="ClickonAppointmentlink2andEditvalues()[pri:8, instance:AllUgsmoketest.Smoketest2@2f686d1f]" name="ClickonAppointmentlink2andEditvalues" duration-ms="14690" started-at="2019-04-21T17:41:54Z" finished-at="2019-04-21T17:42:09Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.fail(Assert.java:103)
+at AllUgsmoketest.Smoketest2.ClickonAppointmentlink2andEditvalues(Smoketest2.java:714)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickonAppointmentlink2andEditvalues -->
+        <test-method status="FAIL" signature="ClickonFunctionHL7eventandEditvalues()[pri:9, instance:AllUgsmoketest.Smoketest2@2f686d1f]" name="ClickonFunctionHL7eventandEditvalues" duration-ms="6017" started-at="2019-04-21T17:42:09Z" finished-at="2019-04-21T17:42:15Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.fail(Assert.java:103)
+at AllUgsmoketest.Smoketest2.ClickonFunctionHL7eventandEditvalues(Smoketest2.java:786)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickonFunctionHL7eventandEditvalues -->
+        <test-method status="FAIL" signature="ActivationHl7eventandeditvalues()[pri:10, instance:AllUgsmoketest.Smoketest2@2f686d1f]" name="ActivationHl7eventandeditvalues" duration-ms="6020" started-at="2019-04-21T17:42:15Z" finished-at="2019-04-21T17:42:21Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.fail(Assert.java:103)
+at AllUgsmoketest.Smoketest2.ActivationHl7eventandeditvalues(Smoketest2.java:855)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ActivationHl7eventandeditvalues -->
+        <test-method status="FAIL" signature="ReportsettingsSarchingcreatingupdatingreport()[pri:11, instance:AllUgsmoketest.Smoketest2@2f686d1f]" name="ReportsettingsSarchingcreatingupdatingreport" duration-ms="8021" started-at="2019-04-21T17:42:21Z" finished-at="2019-04-21T17:42:29Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.fail(Assert.java:103)
+at AllUgsmoketest.Smoketest2.ReportsettingsSarchingcreatingupdatingreport(Smoketest2.java:947)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReportsettingsSarchingcreatingupdatingreport -->
+      </class> <!-- AllUgsmoketest.Smoketest2 -->
+    </test> <!-- Smoketest2 -->
   </suite> <!-- Default suite -->
 </testng-results>

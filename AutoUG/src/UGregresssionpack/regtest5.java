@@ -18,7 +18,7 @@ public class regtest5 extends regtest4{
 
 	public static void main(String[] args) throws InterruptedException {
 
-		reader = new Xls_Reader("E:\\Test.xlsx");
+		reader = new Xls_Reader("C:\\Test.xlsx");
 		paturl = reader.getCellData("reg5", "PatientLink URL", 2);
 
 

@@ -1,15 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+  <test thread-count="5" name="Smoketest1(failed)">
     <classes>
-      <class name="AllUgsmoketest.Smoketest6">
+      <class name="AllUgsmoketest.Smoketest1">
         <methods>
-          <include name="teardown"/>
-          <include name="ActivatingappoinmenttypecreatedatCentrallevel"/>
+          <include name="Clickonschedule"/>
           <include name="setup"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- AllUgsmoketest.Smoketest6 -->
+      </class> <!-- AllUgsmoketest.Smoketest1 -->
     </classes>
-  </test> <!-- Default test(failed) -->
+  </test> <!-- Smoketest1(failed) -->
+  <test thread-count="5" name="Smoketest2(failed)">
+    <classes>
+      <class name="AllUgsmoketest.Smoketest2">
+        <methods>
+          <include name="ReportsettingsSarchingcreatingupdatingreport"/>
+          <include name="ActivationHl7eventandeditvalues"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="ClickonFunctionHL7eventandEditvalues"/>
+          <include name="ClickonAppointmentlink2andEditvalues"/>
+        </methods>
+      </class> <!-- AllUgsmoketest.Smoketest2 -->
+    </classes>
+  </test> <!-- Smoketest2(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
