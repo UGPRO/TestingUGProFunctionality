@@ -54,8 +54,8 @@ public class Smoketest7
 	public static void setup() throws InterruptedException 
 	{
 		// TODO Auto-generated method stub
-		//Code for test 1 and test 2 smoke test case.s
-		reader =new Xls_Reader("C:\\Test.xlsx");
+		//Code for test 1 and test 2 smoke test case.
+		reader =new Xls_Reader("C:\\Users\\akhosla\\Documents\\Test.xlsx");
 		serverurl=reader.getCellData("ST1", "UGURL", 2);
 		SelectSchedule	=reader.getCellData("ST7", "Schedule Setup-Select Schedule", 2);
 		GeneralInfoVal	=reader.getCellData("ST7", "General-Info field Value", 2);
@@ -635,7 +635,7 @@ public class Smoketest7
 
 			//button[@onclick='fSave(false);' and@id='butSave']
 			driver.findElement(By.xpath("//button[@onclick='fSave(false);' and@id='butSave']")).click();  //saving programsession template value.
-
+			Thread.sleep(3000);
 			driver.switchTo().alert();
 			Thread.sleep(6000);
 

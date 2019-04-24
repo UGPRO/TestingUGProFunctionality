@@ -59,7 +59,7 @@ public class Smoketest1
 	{
 		
 		//test git push
-		reader = new Xls_Reader("C:\\Test.xlsx");
+		reader = new Xls_Reader("C:\\Users\\akhosla\\Documents\\Test.xlsx");
 		Thread.sleep(2000);
 		serverurl=reader.getCellData("ST1", "UGURL", 2);
 		htmlReporter = new ExtentHtmlReporter("Smoketest1report.html");

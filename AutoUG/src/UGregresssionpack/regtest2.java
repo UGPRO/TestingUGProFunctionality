@@ -14,7 +14,7 @@ import ugprofunctionality.logoutUG;
 import ugprofunctionality.patientsearch;
 import ugprofunctionality.setupbtnandsyssetting;
 
-public class regtest2 extends regtest1 {
+public class regtest2  {
 	static boolean bValue;
 	static String Pattitname;
 	static String ethname;
@@ -34,17 +34,27 @@ public class regtest2 extends regtest1 {
 	static String npastm;
 	static String FamnameTepPatient;
 	static String DOBTepPatient;
+	static String serverurl;
+	static String Refreshval;
+	static String Calendarday;
+	static String ScheduleNavn;
+	public  static Xls_Reader reader;
+	public static WebDriver driver;
+	static String AuthUsername;
+	static String AuthPassword;
+	static String logtime;
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void setup() throws InterruptedException 
+	{
 
-		reader = new Xls_Reader("C:\\Test.xlsx");
+		reader = new Xls_Reader("C:\\Users\\akhosla\\Documents\\regexcelsheet.xlsx");
 
-
-		Refreshval = SubChar(reader.getCellData("ST2", "ScreenRefresh value", 2).toString());
-		Calendarday	=reader.getCellData("ST2", "CalendarFirstDayOfWeek", 2);
-		ScheduleNavn	 =reader.getCellData("ST6", "Schedule Name", 2);
-		AuthUsername	=reader.getCellData("ST4", "Authentication Username", 2);
-		AuthPassword	=reader.getCellData("ST4", "Authentication Password", 2);
+		serverurl=reader.getCellData("reg1", "UGURL", 2);
+		Refreshval = SubChar(reader.getCellData("reg1", "ScreenRefresh value", 2).toString());
+		Calendarday	=reader.getCellData("reg1", "CalendarFirstDayOfWeek", 2);
+		ScheduleNavn	 =reader.getCellData("reg1", "Schedule Name", 2);
+		AuthUsername	=reader.getCellData("reg1", "Authentication Username", 2);
+		AuthPassword	=reader.getCellData("reg1", "Authentication Password", 2);
 		logtime =reader.getCellData("reg2", "Logoff time", 2);
 		Pattitname=reader.getCellData("reg2", "PatienttitleName", 2);
 		ethname=reader.getCellData("reg2", "Ethnic originval", 2);
@@ -62,13 +72,17 @@ public class regtest2 extends regtest1 {
 		vlmacro=reader.getCellData("reg2", "Validated Macro", 2);
 		Notattethresh =reader.getCellData("reg2", "Not Attending Threshold", 2);
 		npastm =reader.getCellData("reg2", "Number of past month to evaluate", 2);
-		FamnameTepPatient = reader.getCellData("ST8", "Famname-Temp Patient", 2);
-		DOBTepPatient = reader.getCellData("ST8", "DOB-Temp Patient", 2);
+		FamnameTepPatient = reader.getCellData("reg2", "Famname-Temp Patient", 2);
+		DOBTepPatient = reader.getCellData("reg2", "DOB-Temp Patient", 2);
 
 
 		System.setProperty("webdriver.chrome.driver", "C:\\sdriver\\chromedriver.exe");
 		WebDriver driver= new ChromeDriver();
-
+	}
+public static void createentriesforpatienttitleethnicmaritalnextofkin() throws InterruptedException
+{
+	try
+	{
 		userlogin.login(driver);
 
 
@@ -831,6 +845,18 @@ public class regtest2 extends regtest1 {
 		}
 
 
+
+	}
+	public static String SubChar(String value)
+	{
+		int index=0;
+		index = value.indexOf(".");
+
+		if (index>-1)
+
+			return value.substring(0, index);
+
+		else return value;
 
 	}
 }

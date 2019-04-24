@@ -10,8 +10,8 @@
 	<meta name='viewport' content='width=device-width, initial-scale=1' />
 	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
 	
-	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/b4a58fcfd1e137bd9287244035a7c80d3d73b3af/dist/css/extent.css' type='text/css' rel='stylesheet' />
 	
@@ -46,12 +46,12 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Apr 17, 2019 08:56:54 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Apr 24, 2019 03:53:28 PM</span>
 				</a>
 			</li>
 			<li>
                 <a href='#!'>
-                    <span class='label blue darken-3'>3.1.5</span>
+                    <span class='label blue darken-3'>3.1.2</span>
 				</a>
 			</li>
 		</ul>
@@ -72,7 +72,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -123,10 +122,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -138,10 +137,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='42.857%'><span class='strong'>3</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='50%'>3</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='50%'>3</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='57.143%'>4</span> others
 				</div>
 			</div>
 		</div>
@@ -156,17 +155,17 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='3'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>SmokeTest3</span>
-						<span class='test-time'>Apr 17, 2019 08:59:05 AM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Apr 24, 2019 03:53:39 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Apr 17, 2019 08:59:05 AM</span>
-	<span class='label end-time'>Apr 17, 2019 08:59:33 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 27s+638ms</span>
+	<span class='label start-time'>Apr 24, 2019 03:53:39 PM</span>
+	<span class='label end-time'>Apr 24, 2019 03:55:28 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 48s+819ms</span>
 </div>
 	<div class='test-desc'>This test is to Validate Create and Update new Program and Appointmenttype </div>
 	<div class='test-steps'>
@@ -181,33 +180,38 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>8:59:05 AM</td>
+					<td class='timestamp'>3:53:39 PM</td>
+					<td class='step-details'>Test executed on: https://vm64-its.ultragenda.com/UltraGendaPro?newwindow=0</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:53:39 PM</td>
 					<td class='step-details'>This step will click on Definition table option and will click on Program Option</td>
 				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>8:59:20 AM</td>
-					<td class='step-details'>User is not able to Click on the Definition table and Program option</td>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:54:23 PM</td>
+					<td class='step-details'>User is able to do Click on definition table and program option</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>8:59:20 AM</td>
+					<td class='timestamp'>3:54:23 PM</td>
 					<td class='step-details'>This step will Create New program and update program</td>
 				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>8:59:26 AM</td>
-					<td class='step-details'>User is not able to Create and Update new program</td>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:54:58 PM</td>
+					<td class='step-details'>User is able to create and update new program</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>8:59:26 AM</td>
+					<td class='timestamp'>3:54:58 PM</td>
 					<td class='step-details'>This step will Create New Appointmenttype and Update new Appointmenttype</td>
 				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>8:59:33 AM</td>
-					<td class='step-details'>User is not able to Create and Update new Appointmenttype</td>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:55:28 PM</td>
+					<td class='step-details'>User is able to create and Update new Appointmnet type</td>
 				</tr>
 			</tbody>
 		</table>
@@ -255,25 +259,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>6</div>
+					<div class='panel-lead'>7</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Apr 17, 2019 08:56:54 AM</div>
+					<div class='panel-lead'>Apr 24, 2019 03:53:28 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Apr 17, 2019 08:59:33 AM</div>
+			 		<div class='panel-lead'>Apr 24, 2019 04:00:11 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 2m 39s+872ms</div>
+					<div class='panel-lead'>402,926ms</div>
 				</div>
 			</div>
 		</div>
@@ -286,22 +290,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 0,
-				failParent: 1,
+				passParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 0,
 				
-				passChild: 0,
-				failChild: 3,
+				passChild: 3,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
-				infoChild: 3,
-				exceptionsChild: 3,
+				infoChild: 4,
+				exceptionsChild: 0,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

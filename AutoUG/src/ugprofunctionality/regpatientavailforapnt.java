@@ -25,8 +25,8 @@ static boolean bValue;
 	
 	public static void rpaY(WebDriver driver) throws InterruptedException
 	{
-		FreebtnPatfamname = reader.getCellData("ST8", "Freebtn-Patientfamname", 2);
-		FreebtnPatGivenName  = reader.getCellData("ST8", "Freebtn-PatientGivenName ", 2);
+		FreebtnPatfamname = reader.getCellData("reg2", "Freebtn-Patientfamname", 2);
+		FreebtnPatGivenName  = reader.getCellData("reg2", "Freebtn-PatientGivenName ", 2);
 		
 		selapntmnt =reader.getCellData("reg3", "SelAppointmentnametobookappointment", 2);
 		

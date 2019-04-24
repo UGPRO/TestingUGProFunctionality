@@ -12,6 +12,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -62,11 +65,11 @@ public class Smoketest8  {
 	public static String serverurl;
 
 	static String str="Test executed on:";
-
+    @BeforeSuite
 	public static void setup() throws InterruptedException
 	{
 
-		reader =new Xls_Reader("C:\\Test.xlsx");
+		reader =new Xls_Reader("C:\\Users\\akhosla\\Documents\\Test.xlsx");
 		serverurl=reader.getCellData("ST1", "UGURL", 2);
 		Patintfamname = reader.getCellData("ST8", "Patient Fam Name", 2);
 		Patintgivname = reader.getCellData("ST8", "Patinet Given Name", 2);
@@ -112,7 +115,7 @@ public class Smoketest8  {
 	{
 		try
 		{
-			test7 = extent7.createTest("SmokeTest7", "This test will verify the all schedule setup menu options functionality ");
+			test7 = extent7.createTest("SmokeTest8", "This test will verify the all schedule setup menu options functionality ");
 			
 			test7.log(Status.INFO, str +" " +serverurl);
 			test7.log(Status.INFO, "This step will navigate to schedule setup and will click on the schedule icon");
@@ -165,6 +168,7 @@ public class Smoketest8  {
 		catch(Exception e)
 		{
 			test7.fail("User is not able to click on the Schedule icon");	
+			Assert.fail();
 		}
 
 	}
@@ -233,7 +237,7 @@ public class Smoketest8  {
 
 			// } 
 			//Thread.sleep(3000);
-			driver.findElement(By.xpath("//table[@id='CalTable_menu']//tr[6]/td[2]")).click(); // clicking on particular slot
+			driver.findElement(By.xpath("//table[@id='CalTable_menu']//tr[6]/td[3]")).click(); // clicking on particular slot
 			Thread.sleep(3000);
 
 			driver.switchTo().alert();
@@ -253,6 +257,7 @@ public class Smoketest8  {
 		catch(Exception e)
 		{
 			test7.fail("User is not able to go at calendar and click on the particular slot");	
+			Assert.fail();
 		}
 
 	}
@@ -261,6 +266,7 @@ public class Smoketest8  {
 	{	
 		try
 		{
+			Thread.sleep(3000);
 			test7.log(Status.INFO, "This step will click on the program after clicking on the particular slot");
 			framecheck.checkframe12(driver);
 			//td//div[2][text()='New Prg8']
@@ -332,6 +338,7 @@ public class Smoketest8  {
 		catch(Exception e)
 		{
 			test7.fail("User is not able to book an appointmnet after clicking on the particular slot");
+			Assert.fail();
 		}
 
 	}
@@ -467,10 +474,12 @@ public class Smoketest8  {
 		catch(Exception e)
 		{
 			test7.fail("User is not able to book appointment using free button");
+			Assert.fail();
 		}
 
 
 	}
+	@Test(priority=5)
 	public static void clickontheOverbookbutton() throws InterruptedException
 	{
 		try
@@ -555,6 +564,7 @@ public class Smoketest8  {
 		catch(Exception e)
 		{
 			test7.fail("User is not able to book appointment using Overbook button");
+			Assert.fail();
 		}
 	}
 
@@ -562,6 +572,7 @@ public class Smoketest8  {
 	//pending:15/4/2019
 
 	//functionality editing appointment
+	@Test(priority=6)
 	public static void editbookedappointmnetdetails()
 	{
 		try
@@ -614,11 +625,12 @@ public class Smoketest8  {
 		catch(Exception e)
 		{
 			test7.fail("User is not able to book appointment using Overbook button");
+			Assert.fail();
 		}
 	}
 
 	//Rescheduling book appointment details.
-
+	@Test(priority=7)
 	public static void reschedulebookedappointment()
 	{
 		try
@@ -704,10 +716,11 @@ public class Smoketest8  {
 		catch(Exception e)
 		{
 			test7.fail("User is not able to reschedule appointment");
+			Assert.fail();
 		}
 	}
 
-
+	@Test(priority=8)
 	public static void Deletebookedappointmnet()
 
 	{
@@ -753,10 +766,11 @@ public class Smoketest8  {
 		catch(Exception e)
 		{
 			test7.fail("User is not able to book appointment using Overbook button");
+			Assert.fail();
 		}
 	}
 
-
+	@Test(priority=9)
 	public static void clickonthewaitinglisttobookappointment()
 	{
 		try
@@ -856,9 +870,10 @@ public class Smoketest8  {
 		catch(Exception e)
 		{
 			test7.fail("User is not able to book appointment using waiting list button");
+			Assert.fail();
 		}
 	}
-
+	@Test(priority=10)
 	public static void clickontheBlockbuttontosetblockperiod()
 	{
 		try
@@ -901,9 +916,12 @@ public class Smoketest8  {
 		catch(Exception e)
 		{
 			test7.fail("User is not able to block the period");
+			Assert.fail();
 		}
 	}
-
+	//to see activated appoinmtnet user should linked with usergroup
+	//here need to set access rights for the patient to see pat icon
+	@Test(priority=11)
 	public static void createandsearchpatient()
 	{
 		try
@@ -996,6 +1014,7 @@ public class Smoketest8  {
 		catch(Exception e)
 		{
 			test7.fail("User is not able to create and search patient");
+			Assert.fail();
 		}
 	}
 
@@ -1004,7 +1023,7 @@ public class Smoketest8  {
 
 
 	//Orderset functionality.:20-2-2019
-
+	@Test(priority=12)
 	public static void creatingorderset()
 	{
 		try
@@ -1105,6 +1124,7 @@ public class Smoketest8  {
 		catch(Exception e)
 		{
 			test7.fail("User is not able to create Orderset");
+			Assert.fail();
 		}
 	}
 
@@ -1157,6 +1177,7 @@ public class Smoketest8  {
 
 
 	 */
+	@AfterSuite
 	public static void teardown()
 	{
 		extent7.flush();

@@ -28,7 +28,7 @@ public class regtest3 extends regtest2 {
 
 	public static void main(String[] args) throws InterruptedException {
 
-		reader = new Xls_Reader("C:\\Test.xlsx");
+		reader = new Xls_Reader("C:\\Users\\akhosla\\Documents\\regexcelsheet.xlsx");
 		Differentactions = reader.getCellData("reg3", "Actions-Session", 2);
 
 

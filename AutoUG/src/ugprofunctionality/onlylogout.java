@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class onlylogout {
 	
-	@Test
+	
 	public static void outapp(WebDriver driver) throws InterruptedException
 	{
 		

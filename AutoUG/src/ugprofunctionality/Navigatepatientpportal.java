@@ -9,7 +9,7 @@ import AllUgsmoketest.framecheck;
 
 public class Navigatepatientpportal  {
 	
-	 static String ScheduleNavn;
+	// static String ScheduleNavn;
 	public static void navigatepatient(WebDriver driver) throws InterruptedException
 	{
 	
@@ -29,7 +29,7 @@ public class Navigatepatientpportal  {
 		Select sched=new Select(driver.findElement(By.xpath("//select[@id='rscIdDptId']"))); // for now as i was not able to save the schedule , so we will directly
 		//fetch the schedule name from excel sheet. In future need to updating with new created schedule name.
 		Thread.sleep(2000);	
-		sched.selectByVisibleText("NewsSchedule");
+		sched.selectByVisibleText("Dr Dementia");
 		
 			Thread.sleep(7000);
 		

@@ -16,7 +16,7 @@ public class userlogin {
 	
  public static void login(WebDriver driver) throws InterruptedException
  {
-	reader = new Xls_Reader("C:\\Test.xlsx");
+	reader = new Xls_Reader("C:\\Users\\akhosla\\Documents\\Test.xlsx");
 	serverurl=reader.getCellData("ST1", "UGURL", 2);
 		
 		String Username	=reader.getCellData("ST1", "Username", 2);

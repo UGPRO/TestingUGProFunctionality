@@ -20,9 +20,9 @@ public class testregpatwaitavailyn {
 	static WebDriver driver; 
 	
 	public static void main(String[] args) throws InterruptedException {
-		 reader = new Xls_Reader("E:\\Test.xlsx");
-	  FreebtnPatfamname = reader.getCellData("ST8", "Freebtn-Patientfamname", 2);
-		FreebtnPatGivenName  = reader.getCellData("ST8", "Freebtn-PatientGivenName ", 2);
+		 reader = new Xls_Reader("C:\\Users\\akhosla\\Documents\\Test.xlsx");
+	  FreebtnPatfamname = reader.getCellData("reg2", "Freebtn-Patientfamname", 2);
+		FreebtnPatGivenName  = reader.getCellData("reg2", "Freebtn-PatientGivenName ", 2);
 		
 		selapntmnt =reader.getCellData("reg3", "SelAppointmentnametobookappointment", 2); //here appointment name should already exist in the system.
 		

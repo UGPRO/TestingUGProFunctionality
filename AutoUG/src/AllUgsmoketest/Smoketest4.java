@@ -90,7 +90,7 @@ public	static WebDriver driver;
 	@BeforeSuite
 	public static void setup() throws InterruptedException
 	{
-		reader = new Xls_Reader("C:\\Test.xlsx");
+		reader = new Xls_Reader("C:\\Users\\akhosla\\Documents\\Test.xlsx");
 		Thread.sleep(2000);
 		serverurl=reader.getCellData("ST1", "UGURL", 2);
 		
@@ -237,7 +237,7 @@ public	static WebDriver driver;
 			driver.findElement(By.xpath("//img[@id='logoutButton']")).click();
 			Thread.sleep(5000);
 			//create new user form authentication.
-			driver.get("https://vm64-its/ultragenda.authentication/admin/login");
+			driver.get("https://vm64-its.ultragenda.com/ultragenda.authentication/admin/login");
 			driver.manage().window().maximize();
 			Thread.sleep(3000);
 			driver.findElement(By.id("Form_Username")).sendKeys(AuthUsername);

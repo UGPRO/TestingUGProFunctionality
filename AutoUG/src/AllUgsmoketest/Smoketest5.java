@@ -53,7 +53,7 @@ public class Smoketest5
 	{
 		// TODO Auto-generated method stub
 		//Code for test 1 and test 2 smoke test case.
-		reader =new Xls_Reader("C:\\Test.xlsx");
+		reader =new Xls_Reader("C:\\Users\\akhosla\\Documents\\Test.xlsx");
 		serverurl=reader.getCellData("ST1", "UGURL", 2);
 	
 
@@ -154,9 +154,9 @@ public class Smoketest5
 				driver.findElement(By.xpath("//div[@class='uk-width-4-6']//input")).clear();
 				Thread.sleep(2000);
 				driver.findElement(By.xpath("//div[@class='uk-width-4-6']//input")).sendKeys(Stagemarkval);
-				Thread.sleep(3000);
+				Thread.sleep(4000);
 				driver.findElement(By.xpath("//button[@type='submit']")).click();
-				Thread.sleep(3000);
+				Thread.sleep(5000);
 
 
 
@@ -173,7 +173,7 @@ public class Smoketest5
 				driver.findElement(By.xpath("//div[@class='uk-width-4-6']//input")).sendKeys(Stagemarkval);
 				Thread.sleep(3000);
 				driver.findElement(By.xpath("//button[@type='submit']")).click();
-				Thread.sleep(3000);
+				Thread.sleep(5000);
 			}
 			driver.findElement(By.xpath("//a[@label='Load balancing settings']")).click();
 			Thread.sleep(3000);
@@ -185,7 +185,7 @@ public class Smoketest5
 			Thread.sleep(3000);
 			//button[@type='submit']
 			driver.findElement(By.xpath("//button[@type='submit']")).click();
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 			driver.findElement(By.xpath("//a[@label='Session info updates']")).click();
 			Thread.sleep(3000);
 			
@@ -196,7 +196,8 @@ public class Smoketest5
 			driver.findElement(By.xpath("//span//input[@class='uk-form-small uk-form-width-mini uk-margin-right']")).sendKeys("1");
 			Thread.sleep(3000);
 			driver.findElement(By.xpath("//button[@type='submit']")).click(); //saving
-			test4.pass("User is able to save all General settings details");
+			Thread.sleep(3000);
+		//	test4.pass("User is able to save all General settings details");
 			
 			driver.switchTo().alert();
 			Thread.sleep(6000);
@@ -209,7 +210,7 @@ public class Smoketest5
 		catch (NoAlertPresentException exception)
 		{
 
-			test4.pass("User is  able to Create a new usergroup");
+			test4.pass("User is able to save all General settings details");
 
 
 
@@ -341,6 +342,8 @@ public class Smoketest5
 			//need to handle i frame
 			driver.switchTo().frame(driver.findElement(By.id("ultramodal1-modal-iframe")));
 			Thread.sleep(3000);
+			//here below i am selecting access rights for priv and non priv users because
+			//if access right is not set or non priv user then i woul dnot be able to see new created schedule.
 			driver.findElement(By.xpath("//body[@class='window-small']//form//table//tbody//tr[2]//td//div[2]//input[2]")).click(); //click on the all members have access for priviliged user
 			Thread.sleep(3000);
 			driver.findElement(By.xpath("//body[@class='window-small']//form//table//tbody//tr[3]//td//div[2]//input[2]")).click();//click on the all members have access for non priviliged user

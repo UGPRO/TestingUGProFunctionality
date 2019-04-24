@@ -14,8 +14,8 @@ public class regpatinetavailforwaitinglist extends regpatientavailforapnt
 
 	public static void rpaWY(WebDriver driver) throws InterruptedException
 	{
-		FreebtnPatfamname = reader.getCellData("ST8", "Freebtn-Patientfamname", 2);
-		FreebtnPatGivenName  = reader.getCellData("ST8", "Freebtn-PatientGivenName ", 2);
+		FreebtnPatfamname = reader.getCellData("reg2", "Freebtn-Patientfamname", 2);
+		FreebtnPatGivenName  = reader.getCellData("reg2", "Freebtn-PatientGivenName ", 2);
 
 		selapntmnt =reader.getCellData("reg3", "SelAppointmentnametobookappointment", 2); //here appointment name should already exist in the system.
 
