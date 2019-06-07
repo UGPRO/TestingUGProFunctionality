@@ -123,12 +123,12 @@ public class waitinglistYN extends regtest3 {
 
 				Select sched=new Select(driver.findElement(By.xpath("//select[@id='rscIdDptId']"))); 
 				Thread.sleep(2000);	
-				sched.selectByVisibleText("NewsSchedule");
+				sched.selectByVisibleText("Dr Dementia");
 				
 					Thread.sleep(7000);
 				
 				driver.findElement(By.xpath("//div[@class='buttonFloatLeft']//img[@id='scheduleButton']")).click();// clicking on Schedule button-Schedule setup.
-				  Thread.sleep(3000);
+				  Thread.sleep(6000);
 				  
 				 // here waiting list button should be enable.
 	}
@@ -222,12 +222,12 @@ public class waitinglistYN extends regtest3 {
 								Select sched=new Select(driver.findElement(By.xpath("//select[@id='rscIdDptId']"))); // for now as i was not able to save the schedule , so we will directly
 								//fetch the schedule name from excel sheet. In future need to updating with new created schedule name.
 								Thread.sleep(2000);	
-								sched.selectByVisibleText("NewsSchedule");
+								sched.selectByVisibleText("Dr Dementia");
 								
 								Thread.sleep(7000);
 								
 								  driver.findElement(By.xpath("//div[@class='buttonFloatLeft']//img[@id='scheduleButton']")).click();// clicking on Schedule button-Schedule setup.
-								  Thread.sleep(5000);
+								  Thread.sleep(9000);
 								  
 								//Here waiting list button should be disable.
 								  

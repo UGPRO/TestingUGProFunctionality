@@ -23,7 +23,10 @@ public class userlogin {
 		String Password	=reader.getCellData("ST1", "Password", 2);
 	//	System.setProperty("webdriver.chrome.driver", "C:\\selenium drivers\\chromedriver_win32\\chromedriver.exe");
 		//https://vm64-its.ultragenda.com/UltraGendaPro?newwindow=0
+		Thread.sleep(2000);
 		driver.get(serverurl);
+		
+		Thread.sleep(3000);
 		driver.manage().window().maximize();
 		driver.findElement(By.id("Form_Username")).sendKeys(Username);
 		Thread.sleep(3000);	

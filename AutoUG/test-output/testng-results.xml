@@ -2,23 +2,27 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="577422" started-at="2019-04-24T13:41:36Z" finished-at="2019-04-24T13:51:13Z">
+  <suite name="Default suite" duration-ms="571172" started-at="2019-05-08T11:43:58Z" finished-at="2019-05-08T11:53:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="577422" started-at="2019-04-24T13:41:36Z" finished-at="2019-04-24T13:51:13Z">
+    <test name="Default test" duration-ms="571172" started-at="2019-05-08T11:43:58Z" finished-at="2019-05-08T11:53:29Z">
       <class name="UGregresssionpack.regtest4">
-        <test-method status="PASS" signature="setup()[pri:0, instance:UGregresssionpack.regtest4@1bce4f0a]" name="setup" is-config="true" duration-ms="6758" started-at="2019-04-24T13:41:29Z" finished-at="2019-04-24T13:41:36Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:UGregresssionpack.regtest4@5e3a8624]" name="setup" is-config="true" duration-ms="8301" started-at="2019-05-08T11:43:49Z" finished-at="2019-05-08T11:43:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="checkpatientfieldsettings()[pri:1, instance:UGregresssionpack.regtest4@1bce4f0a]" name="checkpatientfieldsettings" duration-ms="423200" started-at="2019-04-24T13:41:36Z" finished-at="2019-04-24T13:48:39Z">
+        <test-method status="PASS" signature="checkpatientfieldsettings()[pri:1, instance:UGregresssionpack.regtest4@5e3a8624]" name="checkpatientfieldsettings" duration-ms="416426" started-at="2019-05-08T11:43:58Z" finished-at="2019-05-08T11:50:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkpatientfieldsettings -->
-        <test-method status="PASS" signature="checkpatientfieldsettingsfortemppatinet()[pri:2, instance:UGregresssionpack.regtest4@1bce4f0a]" name="checkpatientfieldsettingsfortemppatinet" duration-ms="154147" started-at="2019-04-24T13:48:39Z" finished-at="2019-04-24T13:51:13Z">
+        <test-method status="PASS" signature="checkpatientfieldsettingsfortemppatinet()[pri:2, instance:UGregresssionpack.regtest4@5e3a8624]" name="checkpatientfieldsettingsfortemppatinet" duration-ms="154677" started-at="2019-05-08T11:50:54Z" finished-at="2019-05-08T11:53:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkpatientfieldsettingsfortemppatinet -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:UGregresssionpack.regtest4@5e3a8624]" name="teardown" is-config="true" duration-ms="3133" started-at="2019-05-08T11:53:29Z" finished-at="2019-05-08T11:53:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
       </class> <!-- UGregresssionpack.regtest4 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

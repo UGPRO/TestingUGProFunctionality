@@ -7,27 +7,36 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 import AllUgsmoketest.framecheck;
+import excelreaderutility.Xls_Reader;
 
-public class regpatinetavailforwaitinglist extends regpatientavailforapnt 
+public class regpatinetavailforwaitinglist 
 {
-
+	public static String FreebtnPatfamname;
+	public static String FreebtnPatGivenName; 
+	public static String selapntmnt;
+	public static String Selschforwaitinglist;
+	public  static Xls_Reader reader;
 
 	public static void rpaWY(WebDriver driver) throws InterruptedException
 	{
-		FreebtnPatfamname = reader.getCellData("reg2", "Freebtn-Patientfamname", 2);
-		FreebtnPatGivenName  = reader.getCellData("reg2", "Freebtn-PatientGivenName ", 2);
+
+
+		reader =new Xls_Reader("C:\\Users\\akhosla\\Documents\\regexcelsheet.xlsx");
+		FreebtnPatfamname = reader.getCellData("reg3", "Freebtn-Patientfamname", 2);
+		FreebtnPatGivenName  = reader.getCellData("reg3", "Freebtn-PatientGivenName", 2);
+		Selschforwaitinglist = reader.getCellData("reg3", "Selschedforwaitinglist", 2);
 
 		selapntmnt =reader.getCellData("reg3", "SelAppointmentnametobookappointment", 2); //here appointment name should already exist in the system.
-
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@id='txtEncuragePatientSelectionBeforeSearchInUseY']")).click(); 
 		Thread.sleep(2000);//above i am selecting booking start for patient because i have written the code as per booking should always start from patinet. 
 		driver.findElement(By.xpath("//input[@id='txtWaitingListInUseY']")).click(); //clicking on the yes waiting list radio btn
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("//input[@id='txtShowShortNoticeForWLY']")).click(); //clicking on the yes reg od patinet avail for appointment radio btn
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("//button[@id='butSave']")).click();  //saving all values
 
-		Thread.sleep(5000);
+		Thread.sleep(6000);
 		//navigating to schedule setup to book appointment.
 
 
@@ -42,16 +51,16 @@ public class regpatinetavailforwaitinglist extends regpatientavailforapnt
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//select[@id='rscIdDptId']")).click();
 
-
+		Thread.sleep(2000);
 		Select sched=new Select(driver.findElement(By.xpath("//select[@id='rscIdDptId']"))); // for now as i was not able to save the schedule , so we will directly
 		//fetch the schedule name from excel sheet. In future need to updating with new created schedule name.
 		Thread.sleep(2000);	
-		sched.selectByVisibleText("NewsSchedule");
+		sched.selectByVisibleText("Dr Dementia");
 
-		Thread.sleep(7000);
+		Thread.sleep(6000);
 
 		driver.findElement(By.xpath("//div[@class='buttonFloatLeft']//img[@id='scheduleButton']")).click();// clicking on Schedule button-Schedule setup.
-		Thread.sleep(3000);
+		Thread.sleep(7000);
 
 
 		//Below booking appointment using waiting list button
@@ -59,7 +68,7 @@ public class regpatinetavailforwaitinglist extends regpatientavailforapnt
 		framecheck.checkframe11(driver);
 
 		driver.findElement(By.xpath("//button[@id='butWaitinglist']")).click(); //clicking on the waiting list option.
-		Thread.sleep(4000);
+		Thread.sleep(6000);
 
 		driver.switchTo().defaultContent();
 		Thread.sleep(2000);
@@ -74,11 +83,11 @@ public class regpatinetavailforwaitinglist extends regpatientavailforapnt
 		driver.findElement(By.xpath("//input[@title='Family name' and @id='sFamilyname']")).sendKeys(FreebtnPatfamname);
 
 		// driver.findElement(By.xpath("//input[@title='Family name' and @id='sFamilyname']")).sendKeys(Patintfamname);
-
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='rowInput']//input[@name='sGivenname' and @id='sGivenname']")).sendKeys(FreebtnPatGivenName);
-
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='rowButton']//button[@id='butSearch']")).click();
-		Thread.sleep(5000);
+		Thread.sleep(7000);
 
 		driver.findElement(By.xpath("//button[@id='butSelect']")).click();  //selecting Patient for waiting list entry
 
@@ -98,24 +107,26 @@ public class regpatinetavailforwaitinglist extends regpatientavailforapnt
 		//actions3.sendKeys(Keys.DOWN).build().perform();
 		Thread.sleep(1000);
 		actions3.sendKeys(Keys.ENTER).build().perform();
-		Thread.sleep(5000);
+		Thread.sleep(6000);
 
 		//input[@id='schedule-484-input']
 
-		driver.findElement(By.xpath("//input[@id='schedule-484-input']")).click(); // clicking on the created schedule radio btn.
+		driver.findElement(By.xpath("//input[@name='destinationwaitinglists']/following-sibling::label[text()= '" + Selschforwaitinglist+ "']")).click(); // clicking on the created schedule radio btn.
 
 		//click on the continue button of ad waiting list entry popup
-
-
+		Thread.sleep(5000);
 		driver.findElement(By.xpath("//button[@class='uk-button'   and text()='Continue']")).click(); 
-		Thread.sleep(3000);
+		Thread.sleep(6000);
 
 		//here you can see reg patinet availability option.
-
+		driver.findElement(By.xpath("//iframe[@id='f0']/..")).click(); //to get back control on the div we used /.. 
+		driver.switchTo().frame(driver.findElement(By.id("f0")));
+		driver.switchTo().frame(driver.findElement(By.id("f12")));
+		Thread.sleep(4000);
 		driver.findElement(By.xpath("//button[@id='butCancel']")).click();
-		Thread.sleep(3000);
+		Thread.sleep(7000);
 
-		Thread.sleep(2000);
+
 
 		driver.switchTo().defaultContent();
 
@@ -137,7 +148,7 @@ public class regpatinetavailforwaitinglist extends regpatientavailforapnt
 		framecheck.checkframe12(driver);
 
 		driver.findElement(By.xpath("(//div[@class='menuButton'])[1]")).click(); //System administration
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("(//div[@id='menuItem_18'])[1]")).click();  //System Settings
 		Thread.sleep(4000);
 
@@ -157,15 +168,24 @@ public class regpatinetavailforwaitinglist extends regpatientavailforapnt
 
 	public static void rpaWN(WebDriver driver) throws InterruptedException
 	{
-		FreebtnPatfamname = reader.getCellData("ST8", "Freebtn-Patientfamname", 2);
-		FreebtnPatGivenName  = reader.getCellData("ST8", "Freebtn-PatientGivenName ", 2);
 
+		reader =new Xls_Reader("C:\\Users\\akhosla\\Documents\\regexcelsheet.xlsx");
+
+		FreebtnPatfamname = reader.getCellData("reg3", "Freebtn-Patientfamname", 2);
+
+
+		FreebtnPatGivenName  = reader.getCellData("reg3", "Freebtn-PatientGivenName" , 2);
+
+		Selschforwaitinglist = reader.getCellData("reg3", "Selschedforwaitinglist", 2);
 		selapntmnt =reader.getCellData("reg3", "SelAppointmentnametobookappointment", 2); //here appointment name should already exist in the system.
 
-
-
+	//	driver.findElement(By.xpath("//input[@id='txtWaitingListInUseN']")).click();
+		
+		
+		
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("//input[@id='txtShowShortNoticeForWLN']")).click(); //clicking on the No reg patient  avail for appointment radio btn
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 
 
@@ -187,10 +207,10 @@ public class regpatinetavailforwaitinglist extends regpatientavailforapnt
 		driver.findElement(By.xpath("//select[@id='rscIdDptId']")).click();
 
 
-		Select sched=new Select(driver.findElement(By.xpath("//select[@id='rscIdDptId']"))); // for now as i was not able to save the schedule , so we will directly
+		Select sched1=new Select(driver.findElement(By.xpath("//select[@id='rscIdDptId']"))); // for now as i was not able to save the schedule , so we will directly
 		//fetch the schedule name from excel sheet. In future need to updating with new created schedule name.
-		Thread.sleep(2000);	
-		sched.selectByVisibleText("NewsSchedule");
+		Thread.sleep(4000);	
+		sched1.selectByVisibleText("Dr Dementia");
 
 		Thread.sleep(7000);
 
@@ -226,7 +246,7 @@ public class regpatinetavailforwaitinglist extends regpatientavailforapnt
 
 		driver.findElement(By.xpath("//button[@id='butSelect']")).click();  //selecting Patient for waiting list entry
 
-		Thread.sleep(5000);
+		Thread.sleep(7000);
 		driver.switchTo().defaultContent();
 		Thread.sleep(2000);
 
@@ -242,19 +262,22 @@ public class regpatinetavailforwaitinglist extends regpatientavailforapnt
 		//actions3.sendKeys(Keys.DOWN).build().perform();
 		Thread.sleep(1000);
 		actions3.sendKeys(Keys.ENTER).build().perform();
-		Thread.sleep(5000);
+		Thread.sleep(6000);
 
 		//input[@id='schedule-484-input']
 
-		driver.findElement(By.xpath("//input[@id='schedule-484-input']")).click(); // clicking on the created schedule radio btn.
-
-		//click on the continue button of ad waiting list entry popup
-
+		driver.findElement(By.xpath("//input[@name='destinationwaitinglists']/following-sibling::label[text()='"+Selschforwaitinglist+"']")).click(); // clicking on the created schedule radio btn.
+		//click on the continue button of ad waiting list entry popup   Selschforwaitinglist
+		Thread.sleep(4000);
 
 		driver.findElement(By.xpath("//button[@class='uk-button'   and text()='Continue']")).click(); 
+		Thread.sleep(6000);
+
+		driver.findElement(By.xpath("//iframe[@id='f0']/..")).click(); //to get back control on the div we used /.. 
+		driver.switchTo().frame(driver.findElement(By.id("f0")));
+		driver.switchTo().frame(driver.findElement(By.id("f12")));
 		Thread.sleep(3000);
 
-		framecheck.checkframe12(driver);
 
 		driver.findElement(By.xpath("//button[@id='butCancel']")).click();
 		Thread.sleep(3000);

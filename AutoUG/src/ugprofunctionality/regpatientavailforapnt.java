@@ -9,10 +9,11 @@ import org.openqa.selenium.support.ui.Select;
 
 import AllUgsmoketest.framecheck;
 import UGregresssionpack.regtest2;
+import excelreaderutility.Xls_Reader;
 
 
 
-public class regpatientavailforapnt extends regtest2
+public class regpatientavailforapnt
 {
 	
 static String FreebtnPatfamname;
@@ -21,17 +22,21 @@ static String FreebtnPatGivenName;
 static String selapntmnt;
 
 static boolean bValue;
+public  static Xls_Reader reader;
+public static WebDriver driver;
 	
 	
 	public static void rpaY(WebDriver driver) throws InterruptedException
 	{
-		FreebtnPatfamname = reader.getCellData("reg2", "Freebtn-Patientfamname", 2);
-		FreebtnPatGivenName  = reader.getCellData("reg2", "Freebtn-PatientGivenName ", 2);
+		reader =new Xls_Reader("C:\\Users\\akhosla\\Documents\\regexcelsheet.xlsx");
+		
+		FreebtnPatfamname = reader.getCellData("reg3", "Freebtn-Patientfamname", 2);
+		FreebtnPatGivenName  = reader.getCellData("reg3", "Freebtn-PatientGivenName ", 2);
 		
 		selapntmnt =reader.getCellData("reg3", "SelAppointmentnametobookappointment", 2);
 		
 		driver.findElement(By.xpath("//input[@id='txtEncuragePatientSelectionBeforeSearchInUseY']")).click(); 
-		Thread.sleep(2000);//above i am selecting booking start for patient because i have written the code as per booking should always start from patinet. 
+		Thread.sleep(4000);//above i am selecting booking start for patient because i have written the code as per booking should always start from patinet. 
 		
 		driver.findElement(By.xpath("//input[@id='txtShowShortNoticeForAppY']")).click(); //clicking on the yes reg od patinet avail for appointment radio btn
 		Thread.sleep(2000);
@@ -56,7 +61,7 @@ static boolean bValue;
 		Select sched=new Select(driver.findElement(By.xpath("//select[@id='rscIdDptId']"))); // for now as i was not able to save the schedule , so we will directly
 		//fetch the schedule name from excel sheet. In future need to updating with new created schedule name.
 		Thread.sleep(2000);	
-		sched.selectByVisibleText("NewsSchedule");
+		sched.selectByVisibleText("Dr Dementia");
 		
 			Thread.sleep(7000);
 		
@@ -187,7 +192,7 @@ static boolean bValue;
 		Select sched=new Select(driver.findElement(By.xpath("//select[@id='rscIdDptId']"))); // for now as i was not able to save the schedule , so we will directly
 		//fetch the schedule name from excel sheet. In future need to updating with new created schedule name.
 		Thread.sleep(2000);	
-		sched.selectByVisibleText("NewsSchedule");
+		sched.selectByVisibleText("Dr Dementia");
 		
 			Thread.sleep(7000);
 		

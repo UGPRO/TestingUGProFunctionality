@@ -19,6 +19,7 @@ import ugprofunctionality.Navigatepatientpportal;
 import ugprofunctionality.navigatevalidpat;
 import ugprofunctionality.setupbtnandpatfieldsetting;
 import org.testng.Assert;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
 public class regtest4 
@@ -32,11 +33,12 @@ public class regtest4
 	static ExtentReports extent14;
 	static ExtentTest test14;
 	static String str="Test executed on:";
-    @BeforeSuite
+	@BeforeSuite
 	public static void setup() throws InterruptedException
 	{
 
 		reader = new Xls_Reader("C:\\Users\\akhosla\\Documents\\regexcelsheet.xlsx");
+		serverurl=reader.getCellData("reg1", "UGURL", 2);
 		Itempatfield = reader.getCellData("reg4", "Patientfield-Item", 2);
 
 		htmlReporter14 = new ExtentHtmlReporter("Regressiontest4report.html");
@@ -46,20 +48,20 @@ public class regtest4
 
 
 		System.setProperty("webdriver.chrome.driver", "C:\\sdriver\\chromedriver.exe");
-		 driver= new ChromeDriver();
+		driver= new ChromeDriver();
 	}
 
-@Test(priority=1)
+	@Test(priority=1)
 	public static void checkpatientfieldsettings() throws InterruptedException
 	{
 		try
 		{
-			
-			
+
+
 			test14 = extent14.createTest("RegressionTest4", "This test is to Validate patient field settings for temporary patient and validated patient");
 			test14.log(Status.INFO, str +" " +serverurl);
 			test14.log(Status.INFO, "This step will Validate setting for validated patient");
-			
+
 			userlogin.login(driver);
 
 
@@ -244,7 +246,7 @@ public class regtest4
 		}
 
 	}
-@Test(priority=2)
+	@Test(priority=2)
 	public static void checkpatientfieldsettingsfortemppatinet() throws InterruptedException
 	{
 		try
@@ -323,6 +325,7 @@ public class regtest4
 			Assert.fail();
 		}
 	}
+	@AfterSuite
 	public static void teardown()
 	{
 		extent14.flush();

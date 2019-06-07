@@ -756,7 +756,7 @@ public class Smoketest8  {
 		catch (NoAlertPresentException exception)
 		{
 
-			test7.pass("User is able to book appointment using Overbook button");
+			test7.pass("User is able to delete appointment");
 
 
 
@@ -765,7 +765,7 @@ public class Smoketest8  {
 
 		catch(Exception e)
 		{
-			test7.fail("User is not able to book appointment using Overbook button");
+			test7.fail("User is not able to delete appointment");
 			Assert.fail();
 		}
 	}

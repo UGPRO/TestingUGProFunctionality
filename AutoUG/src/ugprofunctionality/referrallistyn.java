@@ -8,7 +8,8 @@ import org.openqa.selenium.support.ui.Select;
 import AllUgsmoketest.framecheck;
 import excelreaderutility.Xls_Reader;
 
-public class referrallistyn {
+public class referrallistyn 
+{
 	
 	
 	public static Xls_Reader reader;
@@ -17,7 +18,7 @@ static String UsergroupNa;
 	
 	public static void listrefY(WebDriver driver) throws InterruptedException
 	{
-		
+		reader = new Xls_Reader("C:\\Users\\akhosla\\Documents\\regexcelsheet.xlsx");
 		
 		 UsergroupNa	=reader.getCellData("reg3", "SelUsergroupNametoseerights", 2);
 		
@@ -223,14 +224,14 @@ static String UsergroupNa;
 								Select sched=new Select(driver.findElement(By.xpath("//select[@id='rscIdDptId']"))); // for now as i was not able to save the schedule , so we will directly
 								//fetch the schedule name from excel sheet. In future need to updating with new created schedule name.
 								Thread.sleep(2000);	
-								sched.selectByVisibleText("NewsSchedule");
+								sched.selectByVisibleText("Dr Dementia");
 								
 								Thread.sleep(7000);
 								
 								  driver.findElement(By.xpath("//div[@class='buttonFloatLeft']//img[@id='scheduleButton']")).click();// clicking on Schedule button-Schedule setup.
 								  Thread.sleep(5000);
 								  
-								//Here waiting list button should be disable.
+								//Here referral list option should be avaialable
 								  
 					  
 					}
