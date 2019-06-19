@@ -46,7 +46,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jun 18, 2019 03:44:29 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jun 18, 2019 06:12:21 PM</span>
 				</a>
 			</li>
 			<li>
@@ -72,6 +72,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -122,10 +123,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -137,10 +138,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>9</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='40%'><span class='strong'>6</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='50%'>9</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='6.667%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='53.333%'>8</span> others
 				</div>
 			</div>
 		</div>
@@ -155,19 +156,19 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Regressiontest7</span>
-						<span class='test-time'>Jun 18, 2019 03:44:35 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>Regressiontest8</span>
+						<span class='test-time'>Jun 18, 2019 06:12:26 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jun 18, 2019 03:44:35 PM</span>
-	<span class='label end-time'>Jun 18, 2019 03:48:15 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 3m 40s+221ms</span>
+	<span class='label start-time'>Jun 18, 2019 06:12:26 PM</span>
+	<span class='label end-time'>Jun 18, 2019 06:25:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 13m 32s+203ms</span>
 </div>
-	<div class='test-desc'>This test will verify the Definition tables settings </div>
+	<div class='test-desc'>This test will validate usergroups,users and accessrights functionality </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -180,93 +181,78 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:44:35 PM</td>
-					<td class='step-details'>Test executed on: https://vm64-its.ultragenda.com/UltraGendaPro?newwindow=0</td>
+					<td class='timestamp'>6:12:26 PM</td>
+					<td class='step-details'>Test executed on: null</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:44:35 PM</td>
-					<td class='step-details'>This step will Create a new program</td>
+					<td class='timestamp'>6:12:26 PM</td>
+					<td class='step-details'>This step will Create new usergorup</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:45:41 PM</td>
-					<td class='step-details'>User is able to create a new program</td>
+					<td class='timestamp'>6:13:50 PM</td>
+					<td class='step-details'>User is able to create new user group</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:45:41 PM</td>
-					<td class='step-details'>This step will delete a new program</td>
+					<td class='timestamp'>6:13:50 PM</td>
+					<td class='step-details'>This step will Create new user</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:45:52 PM</td>
-					<td class='step-details'>User is able to delete a new program</td>
+					<td class='timestamp'>6:15:45 PM</td>
+					<td class='step-details'>User is able to create a new user and link them each to a new usergroup</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:45:52 PM</td>
-					<td class='step-details'>This step will create a new appointmnettype</td>
+					<td class='timestamp'>6:15:45 PM</td>
+					<td class='step-details'>This step will click on the Advanced button to select department</td>
 				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:46:05 PM</td>
-					<td class='step-details'>User is able to create appointmenttype</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:46:05 PM</td>
-					<td class='step-details'>This step will delete and create a new appointmnettype withw same name and abrev</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:46:40 PM</td>
-					<td class='step-details'>User is able to delete and create a new appointmnet with same name and abrev</td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>6:16:06 PM</td>
+					<td class='step-details'>User is not able to select a department using advanced button</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:46:40 PM</td>
-					<td class='step-details'>This step will  and create a new appointmnettype withw same name and abrev that already exist to check error</td>
+					<td class='timestamp'>6:16:06 PM</td>
+					<td class='step-details'>This step will Grant access rights to a new user group</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:46:52 PM</td>
-					<td class='step-details'>User is not able to see error if the appointment already exist</td>
+					<td class='timestamp'>6:16:25 PM</td>
+					<td class='step-details'>User is able to grant access rights</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:46:52 PM</td>
-					<td class='step-details'>This step will  and create a new contact type</td>
+					<td class='timestamp'>6:16:25 PM</td>
+					<td class='step-details'>This step will set waiting list in use or not or will check the access rights for the same</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:47:13 PM</td>
-					<td class='step-details'>User is able to create a new contact-type</td>
+					<td class='timestamp'>6:20:44 PM</td>
+					<td class='step-details'>User is able to see access rights as per waiting list settings</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:47:13 PM</td>
-					<td class='step-details'>This step will  and create a new episode type</td>
+					<td class='timestamp'>6:20:44 PM</td>
+					<td class='step-details'>This step will set referral list in use or not or will check the access rights for the same</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:47:33 PM</td>
-					<td class='step-details'>User is able to create a new episode-type</td>
+					<td class='timestamp'>6:25:11 PM</td>
+					<td class='step-details'>User is able to see access rights as per referral list settings</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:47:33 PM</td>
-					<td class='step-details'>This step will  and create a new universalcde</td>
+					<td class='timestamp'>6:25:11 PM</td>
+					<td class='step-details'>This step will delegate access rights for the new user group</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:47:54 PM</td>
-					<td class='step-details'>User is able to create a universalcode</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:48:15 PM</td>
-					<td class='step-details'>User is able to create ordersetgroup</td>
+					<td class='timestamp'>6:25:58 PM</td>
+					<td class='step-details'>User is able to delegate acccess rights for th new user group</td>
 				</tr>
 			</tbody>
 		</table>
@@ -314,25 +300,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>18</div>
+					<div class='panel-lead'>15</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jun 18, 2019 03:44:29 PM</div>
+					<div class='panel-lead'>Jun 18, 2019 06:12:21 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jun 18, 2019 03:48:15 PM</div>
+			 		<div class='panel-lead'>Jun 18, 2019 06:25:59 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>226,022ms</div>
+					<div class='panel-lead'>817,372ms</div>
 				</div>
 			</div>
 		</div>
@@ -345,22 +331,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 1,
-				failParent: 0,
+				passParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				
-				passChild: 9,
-				failChild: 0,
+				passChild: 6,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
-				infoChild: 9,
-				exceptionsChild: 0,
+				infoChild: 8,
+				exceptionsChild: 1,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

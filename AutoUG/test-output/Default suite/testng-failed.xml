@@ -3,13 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="AllUgsmoketest.Smoketest4">
+      <class name="UGregresssionpack.regtest9">
         <methods>
-          <include name="teardown"/>
+          <include name="createnewloc"/>
+          <include name="deletingnewsite"/>
+          <include name="createnewsite"/>
+          <include name="changethesiteoflocationanddeleteit"/>
+          <include name="deletesiteandrecreatewithsameparameters"/>
           <include name="setup"/>
-          <include name="clickonNewbtnandcreatenewusergrp"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- AllUgsmoketest.Smoketest4 -->
+      </class> <!-- UGregresssionpack.regtest9 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

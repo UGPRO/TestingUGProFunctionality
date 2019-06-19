@@ -46,7 +46,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jun 18, 2019 03:44:29 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jun 18, 2019 05:22:17 PM</span>
 				</a>
 			</li>
 			<li>
@@ -137,10 +137,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>9</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='45.455%'><span class='strong'>5</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='50%'>9</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='54.545%'>6</span> others
 				</div>
 			</div>
 		</div>
@@ -157,17 +157,17 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Regressiontest7</span>
-						<span class='test-time'>Jun 18, 2019 03:44:35 PM</span>
+						<span class='test-name'>Regressiontest9</span>
+						<span class='test-time'>Jun 18, 2019 05:22:22 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jun 18, 2019 03:44:35 PM</span>
-	<span class='label end-time'>Jun 18, 2019 03:48:15 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 3m 40s+221ms</span>
+	<span class='label start-time'>Jun 18, 2019 05:22:22 PM</span>
+	<span class='label end-time'>Jun 18, 2019 05:25:20 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 2m 58s+99ms</span>
 </div>
-	<div class='test-desc'>This test will verify the Definition tables settings </div>
+	<div class='test-desc'>This test will verify Sites and Locations functionality </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -180,93 +180,58 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:44:35 PM</td>
+					<td class='timestamp'>5:22:22 PM</td>
 					<td class='step-details'>Test executed on: https://vm64-its.ultragenda.com/UltraGendaPro?newwindow=0</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:44:35 PM</td>
-					<td class='step-details'>This step will Create a new program</td>
+					<td class='timestamp'>5:22:22 PM</td>
+					<td class='step-details'>This step will Create a new site</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:45:41 PM</td>
-					<td class='step-details'>User is able to create a new program</td>
+					<td class='timestamp'>5:23:43 PM</td>
+					<td class='step-details'>User is able to create a new site</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:45:41 PM</td>
-					<td class='step-details'>This step will delete a new program</td>
+					<td class='timestamp'>5:23:43 PM</td>
+					<td class='step-details'>This step will Create a new location and will change the site of the location to [Select] and save</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:45:52 PM</td>
-					<td class='step-details'>User is able to delete a new program</td>
+					<td class='timestamp'>5:24:02 PM</td>
+					<td class='step-details'>User is able to create a new location and error popup is showing if no site of the location is selected.</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:45:52 PM</td>
-					<td class='step-details'>This step will create a new appointmnettype</td>
+					<td class='timestamp'>5:24:02 PM</td>
+					<td class='step-details'>This step will delete the new site to check error popup if the site has a relation with one or more locations</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:46:05 PM</td>
-					<td class='step-details'>User is able to create appointmenttype</td>
+					<td class='timestamp'>5:24:17 PM</td>
+					<td class='step-details'>User is able to see error poup while deleting site if the site has a relation with one or more locations</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:46:05 PM</td>
-					<td class='step-details'>This step will delete and create a new appointmnettype withw same name and abrev</td>
+					<td class='timestamp'>5:24:17 PM</td>
+					<td class='step-details'>This step will Change the site of the location linked to the new site. Delete the new site and recreate it with the exact same parameters.</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:46:40 PM</td>
-					<td class='step-details'>User is able to delete and create a new appointmnet with same name and abrev</td>
+					<td class='timestamp'>5:24:27 PM</td>
+					<td class='step-details'>User is able to chnage the site of the location and after deleting able to recreate with the same parameters</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:46:40 PM</td>
-					<td class='step-details'>This step will  and create a new appointmnettype withw same name and abrev that already exist to check error</td>
+					<td class='timestamp'>5:24:27 PM</td>
+					<td class='step-details'>This step will Delete the new site and recreate it with the exact same parameters.</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:46:52 PM</td>
-					<td class='step-details'>User is not able to see error if the appointment already exist</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:46:52 PM</td>
-					<td class='step-details'>This step will  and create a new contact type</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:47:13 PM</td>
-					<td class='step-details'>User is able to create a new contact-type</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:47:13 PM</td>
-					<td class='step-details'>This step will  and create a new episode type</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:47:33 PM</td>
-					<td class='step-details'>User is able to create a new episode-type</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:47:33 PM</td>
-					<td class='step-details'>This step will  and create a new universalcde</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:47:54 PM</td>
-					<td class='step-details'>User is able to create a universalcode</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:48:15 PM</td>
-					<td class='step-details'>User is able to create ordersetgroup</td>
+					<td class='timestamp'>5:25:20 PM</td>
+					<td class='step-details'>User is able to delete the site and able to recreate with the same parameters</td>
 				</tr>
 			</tbody>
 		</table>
@@ -314,25 +279,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>18</div>
+					<div class='panel-lead'>11</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jun 18, 2019 03:44:29 PM</div>
+					<div class='panel-lead'>Jun 18, 2019 05:22:17 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jun 18, 2019 03:48:15 PM</div>
+			 		<div class='panel-lead'>Jun 18, 2019 05:25:20 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>226,022ms</div>
+					<div class='panel-lead'>183,383ms</div>
 				</div>
 			</div>
 		</div>
@@ -353,13 +318,13 @@
 				skipParent: 0,
 				exceptionsParent: 0,
 				
-				passChild: 9,
+				passChild: 5,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
-				infoChild: 9,
+				infoChild: 6,
 				exceptionsChild: 0,
 				
 				passGrandChild: 0,

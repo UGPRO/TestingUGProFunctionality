@@ -16,7 +16,9 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.sun.xml.bind.v2.runtime.unmarshaller.LocatorEx;
 //import com.sun.xml.internal.fastinfoset.sax.Properties;
+import com.sun.xml.bind.v2.runtime.unmarshaller.LocatorEx.Snapshot;
 
 import excelreaderutility.Xls_Reader;
 
@@ -93,8 +95,7 @@ public class Smoketest2
 		Bcreport	=reader.getCellData("ST2", "Booking code report", 2);
 		Patientlinktext	=reader.getCellData("ST2", "Patientlinkeventfreetext", 2);
 		PatLinkURL	=reader.getCellData("ST2", "PatientLinkURL", 2);
-		Pmalerturl	=reader.getCellData("ST2", "PatientMedicalalertsURL", 2);
-		ClSideWindowName	=reader.getCellData("ST2", "ClientSideWindowName", 2);
+		Pmalerturl	=reader.getCellData("ST2", "PatientMedicalalertsURL", 2);              
 		EventtextAL1	=reader.getCellData("ST2", "EventFreetext-AL1", 2);
 		AL1URL	=reader.getCellData("ST2", "AL1-URL", 2);
 		AL2ExtrenalHisid	=reader.getCellData("ST2", "AL2ParamExtrenalHisid", 2);
@@ -327,6 +328,7 @@ public class Smoketest2
 		{
 			test1.fail("User is not able to Save the System Setting values");
 			Assert.fail();
+			
 		}
 	}
 	@Test(priority=3)
@@ -496,8 +498,16 @@ public class Smoketest2
 			driver.switchTo().frame(driver.findElement(By.xpath("//*[@id='f12']")));
 			Thread.sleep(3000);
 			driver.findElement(By.xpath("//div[@id='menuItem_44']")).click(); //patient medical alerts
+			
+			
+			// below is the other way to work on xpath using propertiess
+			
+			
 			//driver.findElement(By.xpath(obj.getProperty("patientmedicalalerts"))).click();
 
+			
+			
+			
 			Thread.sleep(3000);
 
 
