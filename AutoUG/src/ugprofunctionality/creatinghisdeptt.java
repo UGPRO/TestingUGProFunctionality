@@ -15,14 +15,13 @@ public class creatinghisdeptt
 	public static void hisdeptcreation(WebDriver driver) throws InterruptedException
 	{
 
-		reader = new Xls_Reader("C:\\Users\\akhosla\\Documents\\Test.xlsx");
+		reader = new Xls_Reader("C:\\Users\\akhosla\\Documents\\regexcelsheet.xlsx");
 		Thread.sleep(2000);
 
 		Hisdeptname	=reader.getCellData("reg10", "Hisdeptname", 2);
 		codehisdept	=reader.getCellData("reg10", "Hisdeptcode", 2);
 		
-		driver.findElement(By.linkText("Central setup")).click();
-		driver.switchTo().frame(driver.findElement(By.xpath("//*[@id='f12']")));
+		
 		driver.findElement(By.xpath("(//div[@class='menuButton'])[3]")).click();  //Central administration
 		Thread.sleep(2000);
 

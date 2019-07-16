@@ -334,6 +334,7 @@ public class regtest3  {
 	{
 		try
 		{
+			
 			test13.log(Status.INFO, "This step will activate deactivate booking procees start with patient functionality");
 			//Functionality booking process start with patient.
 

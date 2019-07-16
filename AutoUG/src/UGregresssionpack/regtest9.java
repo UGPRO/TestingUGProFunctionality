@@ -81,6 +81,8 @@ public class regtest9 {
 
 			test19.log(Status.INFO, str +" " +serverurl);
 			test19.log(Status.INFO, "This step will Create a new site");
+			
+			
 			userlogin.login(driver);
 			driver.findElement(By.linkText("Central setup")).click();
 			Thread.sleep(2000);
